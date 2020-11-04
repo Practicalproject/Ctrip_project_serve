@@ -1,0 +1,334 @@
+{
+    "CategoryID": 2,
+    "tagUp": {
+        "nme": "热门地标周边酒店",
+        "itemLst": [
+            {
+                "nme": "还没想好周末去哪玩？",
+                "lnk": "http://hotels.ctrip.com/around",
+                "isHot": "N"
+            }
+        ],
+        "layout": "RelativeLayout"
+    },
+    "tagDown": {
+        "nme": "促销",
+        "itemLst": [
+            {
+                "nme": "高星酒店限时抢，最低3折",
+                "lnk": "http://hotels.ctrip.com/events/gaoxingjiudianxianshiqiang.html",
+                "isHot": "N"
+            },
+            {
+                "nme": "周末休闲游人气酒店99元起",
+                "lnk": "http://hotels.ctrip.com/events/zhoumoxiuxianyoutuijian.html",
+                "isHot": "N"
+            },
+            {
+                "nme": "精品酒店",
+                "lnk": "http://hotels.ctrip.com/events/jingpinjiudian.html",
+                "isHot": "N"
+            }
+        ],
+        "layout": "LinearLayout"
+    },
+    "exNme": "更多国内酒店",
+    "exLnk": "http://hotels.ctrip.com/",
+    "prdLst": [
+        {
+            "nme": "北京香格里拉饭店",
+            "img": "//dimg11.c-ctrip.com/images/022541200084agmk66C48_R_300_120.jpg",
+            "count": 0,
+            "lnk": "http://hotels.ctrip.com/hotel/429548.html",
+            "rstar": 2,
+            "isStar": true,
+            "starTyp": 0,
+            "star": 5,
+            "zoneLst": [
+                {
+                    "typ": "Zone",
+                    "nme": "西直门/北京展览馆地区",
+                    "lnk": "http://hotels.ctrip.com/hotel/Beijing1/zone40"
+                }
+            ],
+            "score": 4.6,
+            "commt": 4816,
+            "cusEval": 5,
+            "price": {
+                "amt": 1210,
+                "currency": "RMB",
+                "isVip": false,
+                "typ": "min"
+            },
+            "commtLnk": "http://hotels.ctrip.com/hotel/dianping/429548.html#ctm_ref"
+        },
+        {
+            "nme": "北京悦尚·舟客古北简家度假别墅",
+            "img": "//dimg11.c-ctrip.com/images/0204h12000831v25y0676_R_300_120.jpg",
+            "count": 0,
+            "lnk": "http://hotels.ctrip.com/hotel/8396617.html",
+            "rstar": 6,
+            "isStar": false,
+            "starTyp": 0,
+            "star": 2,
+            "zoneLst": [
+                {
+                    "typ": "Zone",
+                    "nme": "古北水镇",
+                    "lnk": "http://hotels.ctrip.com/hotel/Beijing1/zone8704764"
+                }
+            ],
+            "score": 4.8,
+            "commt": 820,
+            "cusEval": 2.5,
+            "price": {
+                "amt": 236,
+                "currency": "RMB",
+                "isVip": false,
+                "typ": "min"
+            },
+            "commtLnk": "http://hotels.ctrip.com/hotel/dianping/8396617.html#ctm_ref"
+        },
+        {
+            "nme": "杨小艳民俗饭庄(北京古镇雾灵山店)",
+            "img": "//dimg11.c-ctrip.com/images/200e0v000000jzgqv9A8E_R_300_120.jpg",
+            "count": 0,
+            "lnk": "http://hotels.ctrip.com/hotel/2568136.html",
+            "rstar": 0,
+            "isStar": false,
+            "starTyp": 0,
+            "star": 2,
+            "zoneLst": [
+                {
+                    "typ": "Zone",
+                    "nme": "雾灵西峰/云岫谷",
+                    "lnk": "http://hotels.ctrip.com/hotel/Beijing1/zone8718854"
+                }
+            ],
+            "score": 4.7,
+            "commt": 55,
+            "cusEval": 2.5,
+            "price": {
+                "amt": 212,
+                "currency": "RMB",
+                "isVip": false,
+                "typ": "min"
+            },
+            "commtLnk": "http://hotels.ctrip.com/hotel/dianping/2568136.html#ctm_ref"
+        }
+    ],
+    "tabs": [
+        {
+            "pinyin": "BeiJing",
+            "tabNme": "北京"
+        },
+        {
+            "pinyin": "ShangHai",
+            "tabNme": "上海"
+        },
+        {
+            "pinyin": "TianJin",
+            "tabNme": "天津"
+        },
+        {
+            "pinyin": "ZhongQing",
+            "tabNme": "重庆"
+        },
+        {
+            "pinyin": "HaErBin",
+            "tabNme": "哈尔滨"
+        },
+        {
+            "pinyin": "DaLian",
+            "tabNme": "大连"
+        },
+        {
+            "pinyin": "QingDao",
+            "tabNme": "青岛"
+        },
+        {
+            "pinyin": "XiAn",
+            "tabNme": "西安"
+        },
+        {
+            "pinyin": "NanJing",
+            "tabNme": "南京"
+        },
+        {
+            "pinyin": "WuXi",
+            "tabNme": "无锡"
+        },
+        {
+            "pinyin": "SuZhou",
+            "tabNme": "苏州"
+        },
+        {
+            "pinyin": "HangZhou",
+            "tabNme": "杭州"
+        },
+        {
+            "pinyin": "HuangShan",
+            "tabNme": "黄山"
+        },
+        {
+            "pinyin": "XiaMen",
+            "tabNme": "厦门"
+        },
+        {
+            "pinyin": "ChengDu",
+            "tabNme": "成都"
+        },
+        {
+            "pinyin": "ShenZhen",
+            "tabNme": "深圳"
+        },
+        {
+            "pinyin": "GuangZhou",
+            "tabNme": "广州"
+        },
+        {
+            "pinyin": "GuiLin",
+            "tabNme": "桂林"
+        },
+        {
+            "pinyin": "KunMing",
+            "tabNme": "昆明"
+        },
+        {
+            "pinyin": "LiJiang",
+            "tabNme": "丽江"
+        },
+        {
+            "pinyin": "GuiYang",
+            "tabNme": "贵阳"
+        },
+        {
+            "pinyin": "WuLuMuQi",
+            "tabNme": "乌鲁木齐"
+        },
+        {
+            "pinyin": "LaSa",
+            "tabNme": "拉萨"
+        },
+        {
+            "pinyin": "HaiKou",
+            "tabNme": "海口"
+        },
+        {
+            "pinyin": "SanYa",
+            "tabNme": "三亚"
+        },
+        {
+            "pinyin": "XiangGang",
+            "tabNme": "香港"
+        },
+        {
+            "pinyin": "HuHeHaoTe",
+            "tabNme": "呼和浩特"
+        },
+        {
+            "pinyin": "TaiYuan",
+            "tabNme": "太原"
+        },
+        {
+            "pinyin": "JiNan",
+            "tabNme": "济南"
+        },
+        {
+            "pinyin": "ChangChun",
+            "tabNme": "长春"
+        },
+        {
+            "pinyin": "ChangSha",
+            "tabNme": "长沙"
+        },
+        {
+            "pinyin": "ChangZhou",
+            "tabNme": "常州"
+        },
+        {
+            "pinyin": "FoShan",
+            "tabNme": "佛山"
+        },
+        {
+            "pinyin": "FuZhou",
+            "tabNme": "福州"
+        },
+        {
+            "pinyin": "HeFei",
+            "tabNme": "合肥"
+        },
+        {
+            "pinyin": "LongYan",
+            "tabNme": "龙岩"
+        },
+        {
+            "pinyin": "MianYang",
+            "tabNme": "绵阳"
+        },
+        {
+            "pinyin": "NingBo",
+            "tabNme": "宁波"
+        },
+        {
+            "pinyin": "NanChang",
+            "tabNme": "南昌"
+        },
+        {
+            "pinyin": "NanNing",
+            "tabNme": "南宁"
+        },
+        {
+            "pinyin": "ShiJiaZhuang",
+            "tabNme": "石家庄"
+        },
+        {
+            "pinyin": "ShenYang",
+            "tabNme": "沈阳"
+        },
+        {
+            "pinyin": "TangShan",
+            "tabNme": "唐山"
+        },
+        {
+            "pinyin": "WuHan",
+            "tabNme": "武汉"
+        },
+        {
+            "pinyin": "ZhengZhou",
+            "tabNme": "郑州"
+        },
+        {
+            "pinyin": "TaiBei",
+            "tabNme": "台北"
+        },
+        {
+            "pinyin": "XiangGeLiLa",
+            "tabNme": "香格里拉"
+        },
+        {
+            "pinyin": "QiDong",
+            "tabNme": "启东"
+        },
+        {
+            "pinyin": "YangShuo",
+            "tabNme": "阳朔"
+        },
+        {
+            "pinyin": "RiZhao",
+            "tabNme": "日照"
+        },
+        {
+            "pinyin": "WuTai",
+            "tabNme": "五台"
+        }
+    ],
+    "adLst": [
+        {
+            "img": "",
+            "alt": "厦门威斯汀酒店",
+            "lnk": "http://hotels.ctrip.com/faxian/t2883"
+        }
+    ],
+    "ver": 2
+}

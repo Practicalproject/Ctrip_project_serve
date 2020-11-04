@@ -1,0 +1,123 @@
+{
+    "tags": {
+        "nme": "热门目的地",
+        "itemLst": [
+            {
+                "nme": "普吉岛",
+                "lnk": "https://huodong.ctrip.com/things-to-do/list?pagetype=city&id=364&pshowcode=1daytrip&citytype=dt"
+            },
+            {
+                "nme": "曼谷",
+                "lnk": "https://huodong.ctrip.com/things-to-do/list?pagetype=city&id=191&pshowcode=1daytrip&citytype=dt"
+            },
+            {
+                "nme": "清迈",
+                "lnk": "https://huodong.ctrip.com/things-to-do/list?pagetype=city&id=209&pshowcode=1daytrip&citytype=dt"
+            },
+            {
+                "nme": "巴厘岛",
+                "lnk": "https://huodong.ctrip.com/things-to-do/list?pagetype=city&id=438&pshowcode=1daytrip&citytype=dt"
+            },
+            {
+                "nme": "东京",
+                "lnk": "https://huodong.ctrip.com/things-to-do/list?pagetype=city&id=294&pshowcode=1daytrip&citytype=dt"
+            },
+            {
+                "nme": "沙巴",
+                "lnk": "https://huodong.ctrip.com/things-to-do/list?pagetype=city&id=538&pshowcode=1daytrip&citytype=dt"
+            },
+            {
+                "nme": "芭堤雅",
+                "lnk": "https://huodong.ctrip.com/things-to-do/list?pagetype=city&id=208&pshowcode=1daytrip&citytype=dt"
+            },
+            {
+                "nme": "大阪",
+                "lnk": "https://huodong.ctrip.com/things-to-do/list?pagetype=city&id=293&pshowcode=1daytrip&citytype=dt"
+            },
+            {
+                "nme": "芽庄",
+                "lnk": "https://huodong.ctrip.com/things-to-do/list?pagetype=city&id=670&pshowcode=1daytrip&citytype=dt"
+            },
+            {
+                "nme": "新加坡",
+                "lnk": "https://huodong.ctrip.com/things-to-do/list?pagetype=city&id=53&pshowcode=1daytrip&citytype=dt"
+            },
+            {
+                "nme": "迪拜",
+                "lnk": "https://huodong.ctrip.com/things-to-do/list?pagetype=city&id=1062&pshowcode=1daytrip&citytype=dt"
+            },
+            {
+                "nme": "墨尔本",
+                "lnk": "https://huodong.ctrip.com/things-to-do/list?pagetype=city&id=312&pshowcode=1daytrip&citytype=dt"
+            }
+        ],
+        "layout": "RelativeLayout"
+    },
+    "catgId": 9001,
+    "exNme": "更多当地玩乐",
+    "exLnk": "https://huodong.ctrip.com/things-to-do/list?pagetype=city&id=364&citytype=dt",
+    "prdLst": [
+        {
+            "nme": "普吉岛查龙寺+卡伦观景台+神仙半岛+普吉镇环岛一日游【VIP包车/线路可定制/说走就走】",
+            "img": "https://dimg08.c-ctrip.com/images/100g10000000ov0m0BAA6_C_280_158.jpg",
+            "lnk": "https://activity.ctrip-ttd.hk/ottd-activity/dest/t22280312.html?ctm_ref=vactang_scene_399",
+            "subNme": "普吉岛",
+            "price": {
+                "amt": 129.0,
+                "currency": "CNY",
+                "type": "min"
+            }
+        },
+        {
+            "nme": "普吉岛皮皮岛浮潜一日游【可选竹子岛/鸡蛋岛/蜜月岛/网红游艇】",
+            "img": "https://dimg04.c-ctrip.com/images/350q15000000yiwljC92F_C_280_158.jpg",
+            "lnk": "https://activity.ctrip-ttd.hk/ottd-activity/dest/t20236457.html?ctm_ref=vactang_scene_399",
+            "subNme": "普吉岛",
+            "price": {
+                "amt": 326.0,
+                "currency": "CNY",
+                "type": "min"
+            }
+        },
+        {
+            "nme": "普吉岛皇帝岛+皇帝岛潜水一日游【豪华游艇躺着出行/专业深潜船/多船可选】",
+            "img": "https://dimg04.c-ctrip.com/images/35051a0000019jbkbC9BC_C_280_158.jpg",
+            "lnk": "https://activity.ctrip-ttd.hk/ottd-activity/dest/t18716646.html?ctm_ref=vactang_scene_399",
+            "subNme": "普吉岛",
+            "price": {
+                "amt": 216.0,
+                "currency": "CNY",
+                "type": "min"
+            }
+        },
+        {
+            "nme": "普吉岛皇帝岛+珊瑚岛浮潜一日游【巨型帆船趟着出海|经典快艇性价比优选】",
+            "img": "https://dimg04.c-ctrip.com/images/350k15000000ywr9a3172_C_280_158.jpg",
+            "lnk": "https://activity.ctrip-ttd.hk/ottd-activity/dest/t20261476.html?ctm_ref=vactang_scene_399",
+            "subNme": "普吉岛",
+            "price": {
+                "amt": 226.0,
+                "currency": "CNY",
+                "type": "min"
+            }
+        }
+    ],
+    "tabs": [
+        {
+            "tabNme": "一日游",
+            "pinyin": "YiRiYou"
+        },
+        {
+            "tabNme": "当地交通",
+            "pinyin": "DangDiJiaoTong"
+        },
+        {
+            "tabNme": "当地美食",
+            "pinyin": "DangDiMeiShi"
+        },
+        {
+            "tabNme": "旅行服务",
+            "pinyin": "LvXingFuWu"
+        }
+    ]
+}

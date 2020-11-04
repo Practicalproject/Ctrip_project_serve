@@ -23,7 +23,7 @@ const app = express()
 
 //应用中间件
 //解析请求体中urlencoded编码的参数为一个对象
-app.use(express.urlencoded({extended:true}))
+app.use(express.urlencoded({ extended: true }))
 
 //解析请求体中json编码的参数为一个对象
 app.use(express.json())
@@ -37,8 +37,8 @@ app.use(session({
 	saveUninitialized: false, //是否在存储内容之前创建会话
 	secret: 'ctrip', //参与加密的字符串（又称签名）
 	cookie: {
-		 httpOnly: true, // 开启后前端无法通过 JS 操作cookie
-		 maxAge: 1000*60*60 // 设置cookie的过期时间
+		httpOnly: true, // 开启后前端无法通过 JS 操作cookie
+		maxAge: 1000 * 60 * 60 // 设置cookie的过期时间
 	},
 	store: new MongoStore({
 		url: 'mongodb://localhost:27017/ctrip_sessions_container',
@@ -46,77 +46,110 @@ app.use(session({
 }))
 
 
-;(async()=>{
-	//等待数据库连接
-	await db
-	//响应用户注册
-	app.post('/register',async(request,response)=>{
-		//获取客户端传递过来的：邮箱、密码、昵称
-		const {email,pwd,nick_name} = request.body
-		//去数据库中查询该用户是否注册过
-		const findResult = await userModel.findOne({email})
-		//若未注册
-		if(!findResult){
-			await userModel.create({email,pwd:md5(pwd),nick_name})
-			response.send({
-				code:20000,
-				msg:'注册成功！',
-				data:{}
-			})
-		}else{
-			response.send({
-				code:20001,
-				msg:'用户已注册！',
-				data:{}
-			})
-		}
-	})
+	; (async () => {
+		//等待数据库连接
+		await db
+		//响应用户注册
+		app.post('/register', async (request, response) => {
+			//获取客户端传递过来的：邮箱、密码、昵称
+			const { email, pwd, nick_name } = request.body
+			//去数据库中查询该用户是否注册过
+			const findResult = await userModel.findOne({ email })
+			//若未注册
+			if (!findResult) {
+				await userModel.create({ email, pwd: md5(pwd), nick_name })
+				response.send({
+					code: 20000,
+					msg: '注册成功！',
+					data: {}
+				})
+			} else {
+				response.send({
+					code: 20001,
+					msg: '用户已注册！',
+					data: {}
+				})
+			}
+		})
 
-	app.post('/login',async(request,response)=>{
-		//获取客户端传递过来的：邮箱、密码、昵称
-		const {email,pwd} = request.body
-		//去数据库中查询该用户是否注册过
-		const findResult = await userModel.findOne({email,pwd:md5(pwd)})
-		//若登录成功
-		if(findResult){
-			request.session._id = findResult._id
-			response.send({
-				code:20000,
-				msg:'登录成功！',
-				data:findResult
-			})
-		}else{
-			//登录失败
-			response.send({
-				code:20001,
-				msg:'登录失败！',
-				data:{}
-			})
-		}
-	})
 
-	app.post('/verify_login',async(request,response)=>{
-		const {_id} = request.session
-		const findResult = await userModel.findOne({_id})
-		if(findResult){
-			response.send({
-				code:20000,
-				msg:'验证身份成功！',
-				data:findResult
-			})
-		}else{
-			response.send({
-				code:20001,
-				msg:'用户身份不合法，请重新登录',
-				data:findResult
-			})
-		}
-	})
+		//用户登录
+		app.post('/login', async (request, response) => {
+			//获取客户端传递过来的：邮箱、密码、昵称
+			const { email, pwd } = request.body
+			//去数据库中查询该用户是否注册过
+			const findResult = await userModel.findOne({ email, pwd: md5(pwd) })
+			//若登录成功
+			if (findResult) {
+				request.session._id = findResult._id
+				response.send({
+					code: 20000,
+					msg: '登录成功！',
+					data: findResult
+				})
+			} else {
+				//登录失败
+				response.send({
+					code: 20001,
+					msg: '登录失败！',
+					data: {}
+				})
+			}
+		})
+		// 验证是否登陆
+		app.post('/verify_login', async (request, response) => {
+			const { _id } = request.session
+			const findResult = await userModel.findOne({ _id })
+			if (findResult) {
+				response.send({
+					code: 20000,
+					msg: '验证身份成功！',
+					data: findResult
+				})
+			} else {
+				response.send({
+					code: 20001,
+					msg: '用户身份不合法，请重新登录',
+					data: findResult
+				})
+			}
+		})
 
-	app.listen(8080,(err)=>{
-		if(!err) console.log('服务器ok了');
-		else console.log(err);
-	})
-	
-})()
+
+		// 获取携程首页第一板块热门列表
+		let IndexHot = require("./datas/IndexHot.json")
+		app.get('/getIndexHot', async (request, response) => {
+			response.send({
+				code: 200,
+				msg: 'ok',
+				data: IndexHot
+			})
+		})
+		// 获取携程全部国家列表
+		let IndexCountry = require("./datas/IndexCountry.json")
+		app.get('/getIndexCountry', async (request, response) => {
+			response.send({
+				code: 200,
+				msg: 'ok',
+				data: IndexCountry
+			})
+		})
+		// 获取携程首页海外酒店板块数据
+
+		let IndexHotel = require("./datas/IndexHotel.json")
+		app.get('/getIndexHotel', async (request, response) => {
+			response.send({
+				code: 200,
+				msg: 'ok',
+				data: IndexHotel
+			})
+		})
+
+
+		app.listen(8080, (err) => {
+			if (!err) console.log('服务器ok了');
+			else console.log(err);
+		})
+
+	})()
 

@@ -19,7 +19,6 @@ const userSchema = new Schema({
 	},
 	nick_name:{
 		type:String,
-		required:true
 	}
 })
 
