@@ -1,0 +1,24 @@
+{
+  "name": "Ctrip_project_serve",
+  "version": "1.0.0",
+  "description": "市值一个亿的项目",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Practicalproject/Ctrip_project_serve.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Practicalproject/Ctrip_project_serve/issues"
+  },
+  "homepage": "https://github.com/Practicalproject/Ctrip_project_serve#readme",
+  "dependencies": {
+    "koa": "^2.13.0",
+    "koa-router": "^10.0.0"
+  }
+}
