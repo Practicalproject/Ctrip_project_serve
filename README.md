@@ -91,3 +91,36 @@ GET
 ## 请求参数
 
 无
+
+# 获取携程首页国际•港澳台特价机票
+
+## URL
+/getIndexInternational
+## 请求方式
+GET
+
+## 请求参数
+
+无
+
+# 获取携程首页境外租车
+
+## URL
+/getIndexCarRental
+## 请求方式
+GET
+
+## 请求参数
+
+无
+
+# 获取携程首页境外租车
+
+## URL
+/getIndexPlay
+## 请求方式
+GET
+
+## 请求参数
+
+无
