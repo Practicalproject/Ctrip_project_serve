@@ -155,7 +155,7 @@ app.use(session({
 			})
 		})
 
-		
+
 		// 获取携程首页境外租车
 		let IndexCarRental = require("./datas/IndexCarRental.json")
 		app.get('/getIndexCarRental', async (request, response) => {
@@ -165,6 +165,21 @@ app.use(session({
 				data: IndexCarRental
 			})
 		})
+
+
+		
+		// 获取携程首页境外租车
+		let IndexPlay = require("./datas/IndexPlay.json")
+		app.get('/getIndexPlay', async (request, response) => {
+			response.send({
+				code: 200,
+				msg: 'ok',
+				data: IndexPlay
+			})
+		})
+
+
+
 		app.listen(8080, (err) => {
 			if (!err) console.log('服务器ok了');
 			else console.log(err);
