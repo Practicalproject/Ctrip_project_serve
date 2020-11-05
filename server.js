@@ -438,7 +438,7 @@ app.use(session({
 				let DuShiGouWu = require("./datas/haiwaijiudian/DuShiGouWu.json")
 				let HaiDaoXiuXian = require("./datas/haiwaijiudian/HaiDaoXiuXian.json")
 				let LuYouShengDi = require("./datas/haiwaijiudian/LuYouShengDi.json")
-				app.get('/getIndexHotela', async (request, response) => {
+				app.get('/getIndexHotel', async (request, response) => {
 					let { dq } = request.query
 					if (dq === "ReMenChengShi") {
 						response.send({

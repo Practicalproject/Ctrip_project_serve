@@ -59,7 +59,7 @@ POST
 
 }
 
-# 获取携程首页第一板块热门列表
+# 获取携程首页第一板块 热门 列表
 
 ## URL
 /getIndexHot
@@ -77,7 +77,7 @@ GET
         MeiZhou
         AoZhongDongFei
 
-# 获取携程首页第一板块周边游列表
+# 获取携程首页第一板块 周边游 列表
 
 ## URL
 /getIndexSurrounding
@@ -99,7 +99,7 @@ GET
         AnJi
         WuXi
 
-# 获取携程首页第一板块门票游列表
+# 获取携程首页第一板块 门票 列表
 
 ## URL
 /getIndexTickets
@@ -119,6 +119,23 @@ GET
         HeXian
         HaiAn
 
+
+# 获取携程首页第二板块 海外酒店 列表
+
+## URL
+/getIndexHotel
+## 请求方式
+GET
+
+## 请求参数
+
+
+    dq:
+        ReMenChengShi
+        DuShiGouWu
+        HaiDaoXiuXian
+        LuYouShengDi
+
 # 获取携程全部国家列表
 
 ## URL
@@ -130,16 +147,6 @@ GET
 
 无
 
-# 获取携程首页海外酒店板块数据
-
-## URL
-/getIndexHotel
-## 请求方式
-GET
-
-## 请求参数
-
-无
 
 # 获取携程首页国际•港澳台特价机票
 
