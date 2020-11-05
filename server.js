@@ -119,7 +119,7 @@ app.use(session({
 		})
 			//#endregion
 
-			//#region 热门 获取携程首页第一板块热门列表
+			//#region 热门 获取携程首页第一板块 热门 列表
 			; (function () {
 				let JingNei = require("./datas/remen/JingNei.json")	//境内
 				let RiBen = require("./datas/remen/RiBen.json")	//日本
@@ -177,7 +177,7 @@ app.use(session({
 			})()
 			//#endregion
 
-			//#region 周边游 获取携程首页第一板块周边游列表
+			//#region 周边游 获取携程首页第一板块 周边游 列表
 			; (function () {
 				let JingXuan = require("./datas/zhoubianyou/JingXuan.json")	//精选
 				let ShangHai = require("./datas/zhoubianyou/ShangHai.json")	//上海
@@ -267,7 +267,7 @@ app.use(session({
 			})()
 			//#endregion
 
-			//#region 门票 获取携程首页第一板块门票列表
+			//#region 门票 获取携程首页第一板块 门票 列表
 			; (function () {
 				let ShangHai = require("./datas/menpiao/ShangHai.json")	//上海
 				let LongYou = require("./datas/menpiao/LongYou.json")	//龙游
@@ -341,7 +341,7 @@ app.use(session({
 			})()
 			//#endregion
 
-			//#region 出境游 获取携程首页第一板块出境游列表
+			//#region 出境游 获取携程首页第一板块 出境游 列表
 			; (function () {
 				let JingXuan = require("./datas/chujingyou/JingXuan.json")	//精选
 				let RiBen = require("./datas/chujingyou/RiBen.json")	//日本
@@ -432,7 +432,7 @@ app.use(session({
 			//#endregion
 
 
-			//#region 获取携程首页海外酒店板块数据
+			//#region 获取携程首页 海外酒店 板块数据
 			; (function () {
 				let ReMenChengShi = require("./datas/haiwaijiudian/ReMenChengShi.json")
 				let DuShiGouWu = require("./datas/haiwaijiudian/DuShiGouWu.json")
@@ -472,6 +472,7 @@ app.use(session({
 				})
 			})()
 		//#endregion
+
 
 
 		// 获取携程全部国家列表

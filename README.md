@@ -119,6 +119,28 @@ GET
         HeXian
         HaiAn
 
+# 获取携程首页第一板块 出境游 列表
+
+## URL
+/getIndexOverseas
+## 请求方式
+GET
+
+## 请求参数
+
+
+    diqu:
+        JingXuan
+        RiBen
+        ZhongGuoAoMen
+        TaiGuo
+        MaErDaiFu
+        BingDao
+        RuiShi
+        XinJiaPo
+        DongJing
+        PuJiDao
+
 
 # 获取携程首页第二板块 海外酒店 列表
 
