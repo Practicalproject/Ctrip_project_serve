@@ -429,7 +429,50 @@ app.use(session({
 					}
 				})
 			})()
+			//#endregion
+
+
+			//#region 获取携程首页海外酒店板块数据
+			; (function () {
+				let ReMenChengShi = require("./datas/haiwaijiudian/ReMenChengShi.json")
+				let DuShiGouWu = require("./datas/haiwaijiudian/DuShiGouWu.json")
+				let HaiDaoXiuXian = require("./datas/haiwaijiudian/HaiDaoXiuXian.json")
+				let LuYouShengDi = require("./datas/haiwaijiudian/LuYouShengDi.json")
+				app.get('/getIndexHotela', async (request, response) => {
+					let { dq } = request.query
+					if (dq === "ReMenChengShi") {
+						response.send({
+							code: 200,
+							msg: 'ok',
+							data: ReMenChengShi
+						})
+						return
+					} else if (dq === "DuShiGouWu") {
+						response.send({
+							code: 200,
+							msg: 'ok',
+							data: DuShiGouWu
+						})
+						return
+					} else if (dq === "HaiDaoXiuXian") {
+						response.send({
+							code: 200,
+							msg: 'ok',
+							data: HaiDaoXiuXian
+						})
+						return
+					} else if (dq === "LuYouShengDi") {
+						response.send({
+							code: 200,
+							msg: 'ok',
+							data: LuYouShengDi
+						})
+						return
+					}
+				})
+			})()
 		//#endregion
+
 
 		// 获取携程全部国家列表
 		let IndexCountry = require("./datas/IndexCountry.json")
@@ -438,16 +481,6 @@ app.use(session({
 				code: 200,
 				msg: 'ok',
 				data: IndexCountry
-			})
-		})
-		// 获取携程首页海外酒店板块数据
-
-		let IndexHotel = require("./datas/IndexHotel.json")
-		app.get('/getIndexHotel', async (request, response) => {
-			response.send({
-				code: 200,
-				msg: 'ok',
-				data: IndexHotel
 			})
 		})
 
