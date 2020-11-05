@@ -1,0 +1,238 @@
+{
+    "tabLst": [
+        {
+            "tabNme": "热门往返",
+            "pinyin": "ReMenWangFan"
+        },
+        {
+            "tabNme": "亚洲",
+            "pinyin": "YaZhou"
+        },
+        {
+            "tabNme": "欧洲",
+            "pinyin": "OuZhou"
+        },
+        {
+            "tabNme": "美洲",
+            "pinyin": "MeiZhou"
+        },
+        {
+            "tabNme": "非洲",
+            "pinyin": "FeiZhou"
+        }
+    ],
+    "adLst": [
+        {
+            "img": "//images4.c-ctrip.com/target/60010q000000gsgjnAD29.jpg",
+            "lnk": "http://m.ctrip.com/webapp/flight-campaign/campaign/movements/hfxgheqpc.html#ctm_ref=ad_10320663668_hfxgheqpc#ctm_ref=Iflt_hp_hot_ad_i",
+            "alt": "惠飞选国航",
+            "idx": 0
+        }
+    ],
+    "caleLst": [
+        {
+            "dateTxt": "11月10日 - 11月17日",
+            "acNme": "澳门",
+            "acCde": "MFM",
+            "date": "0001-01-01T00:00:00",
+            "date2": "0001-01-01T00:00:00",
+            "price": {
+                "amt": 398.0,
+                "currency": "CNY",
+                "type": "MIN"
+            },
+            "url": "//flights.ctrip.com/international/search/round-sha-mfm?depdate=2020-11-11_2020-11-18#ctm_ref=Iflt_hp_hot_fav_p",
+            "dcCde": "SHA",
+            "dcNme": "上海"
+        },
+        {
+            "dateTxt": "11月07日 - 11月14日",
+            "acNme": "台北",
+            "acCde": "TPE",
+            "date": "0001-01-01T00:00:00",
+            "date2": "0001-01-01T00:00:00",
+            "price": {
+                "amt": 690.0,
+                "currency": "CNY",
+                "type": "MIN"
+            },
+            "url": "//flights.ctrip.com/international/search/round-sha-tpe?depdate=2020-11-08_2020-11-15#ctm_ref=Iflt_hp_hot_fav_p",
+            "dcCde": "SHA",
+            "dcNme": "上海"
+        },
+        {
+            "dateTxt": "11月05日 - 11月12日",
+            "acNme": "香港",
+            "acCde": "HKG",
+            "date": "0001-01-01T00:00:00",
+            "date2": "0001-01-01T00:00:00",
+            "price": {
+                "amt": 1300.0,
+                "currency": "CNY",
+                "type": "MIN"
+            },
+            "url": "//flights.ctrip.com/international/search/round-sha-hkg?depdate=2020-11-06_2020-11-13#ctm_ref=Iflt_hp_hot_fav_p",
+            "dcCde": "SHA",
+            "dcNme": "上海"
+        },
+        {
+            "dateTxt": "11月06日 - 11月13日",
+            "acNme": "香港",
+            "acCde": "HKG",
+            "date": "0001-01-01T00:00:00",
+            "date2": "0001-01-01T00:00:00",
+            "price": {
+                "amt": 1300.0,
+                "currency": "CNY",
+                "type": "MIN"
+            },
+            "url": "//flights.ctrip.com/international/search/round-sha-hkg?depdate=2020-11-07_2020-11-14#ctm_ref=Iflt_hp_hot_fav_p",
+            "dcCde": "SHA",
+            "dcNme": "上海"
+        },
+        {
+            "dateTxt": "11月07日 - 11月14日",
+            "acNme": "伦敦",
+            "acCde": "LON",
+            "date": "0001-01-01T00:00:00",
+            "date2": "0001-01-01T00:00:00",
+            "price": {
+                "amt": 4090.0,
+                "currency": "CNY",
+                "type": "MIN"
+            },
+            "url": "//flights.ctrip.com/international/search/round-sha-lon?depdate=2020-11-08_2020-11-15#ctm_ref=Iflt_hp_hot_fav_p",
+            "dcCde": "SHA",
+            "dcNme": "上海"
+        },
+        {
+            "dateTxt": "11月07日 - 11月14日",
+            "acNme": "巴黎",
+            "acCde": "PAR",
+            "date": "0001-01-01T00:00:00",
+            "date2": "0001-01-01T00:00:00",
+            "price": {
+                "amt": 4800.0,
+                "currency": "CNY",
+                "type": "MIN"
+            },
+            "url": "//flights.ctrip.com/international/search/round-sha-par?depdate=2020-11-08_2020-11-15#ctm_ref=Iflt_hp_hot_fav_p",
+            "dcCde": "SHA",
+            "dcNme": "上海"
+        },
+        {
+            "dateTxt": "11月07日 - 11月14日",
+            "acNme": "法兰克福",
+            "acCde": "FRA",
+            "date": "0001-01-01T00:00:00",
+            "date2": "0001-01-01T00:00:00",
+            "price": {
+                "amt": 4800.0,
+                "currency": "CNY",
+                "type": "MIN"
+            },
+            "url": "//flights.ctrip.com/international/search/round-sha-fra?depdate=2020-11-08_2020-11-15#ctm_ref=Iflt_hp_hot_fav_p",
+            "dcCde": "SHA",
+            "dcNme": "上海"
+        },
+        {
+            "dateTxt": "11月06日 - 11月13日",
+            "acNme": "伦敦",
+            "acCde": "LON",
+            "date": "0001-01-01T00:00:00",
+            "date2": "0001-01-01T00:00:00",
+            "price": {
+                "amt": 5270.0,
+                "currency": "CNY",
+                "type": "MIN"
+            },
+            "url": "//flights.ctrip.com/international/search/round-sha-lon?depdate=2020-11-07_2020-11-14#ctm_ref=Iflt_hp_hot_fav_p",
+            "dcCde": "SHA",
+            "dcNme": "上海"
+        },
+        {
+            "dateTxt": "11月09日 - 11月16日",
+            "acNme": "曼谷",
+            "acCde": "BKK",
+            "date": "0001-01-01T00:00:00",
+            "date2": "0001-01-01T00:00:00",
+            "price": {
+                "amt": 9600.0,
+                "currency": "CNY",
+                "type": "MIN"
+            },
+            "url": "//flights.ctrip.com/international/search/round-sha-bkk?depdate=2020-11-10_2020-11-17#ctm_ref=Iflt_hp_hot_fav_p",
+            "dcCde": "SHA",
+            "dcNme": "上海"
+        },
+        {
+            "dateTxt": "11月05日 - 11月12日",
+            "acNme": "新加坡",
+            "acCde": "SIN",
+            "date": "0001-01-01T00:00:00",
+            "date2": "0001-01-01T00:00:00",
+            "price": {
+                "amt": 14400.0,
+                "currency": "CNY",
+                "type": "MIN"
+            },
+            "url": "//flights.ctrip.com/international/search/round-sha-sin?depdate=2020-11-06_2020-11-13#ctm_ref=Iflt_hp_hot_fav_p",
+            "dcCde": "SHA",
+            "dcNme": "上海"
+        },
+        {
+            "dateTxt": "11月06日 - 11月13日",
+            "acNme": "纽约",
+            "acCde": "NYC",
+            "date": "0001-01-01T00:00:00",
+            "date2": "0001-01-01T00:00:00",
+            "price": {
+                "amt": 16352.0,
+                "currency": "CNY",
+                "type": "MIN"
+            },
+            "url": "//flights.ctrip.com/international/search/round-sha-nyc?depdate=2020-11-07_2020-11-14#ctm_ref=Iflt_hp_hot_fav_p",
+            "dcCde": "SHA",
+            "dcNme": "上海"
+        },
+        {
+            "dateTxt": "11月09日 - 11月16日",
+            "acNme": "纽约",
+            "acCde": "NYC",
+            "date": "0001-01-01T00:00:00",
+            "date2": "0001-01-01T00:00:00",
+            "price": {
+                "amt": 16474.0,
+                "currency": "CNY",
+                "type": "MIN"
+            },
+            "url": "//flights.ctrip.com/international/search/round-sha-nyc?depdate=2020-11-10_2020-11-17#ctm_ref=Iflt_hp_hot_fav_p",
+            "dcCde": "SHA",
+            "dcNme": "上海"
+        }
+    ],
+    "prdLst": [
+        {
+            "nme": "免签落地签特惠推荐",
+            "img": "//images3.c-ctrip.com/rk/201504/220x175ms.jpg",
+            "lnk": "http://events.flights.ctrip.com/intlflight/mianqianluodiqian.html#ctm_ref=Iflt_hp_hot_ad_i",
+            "price": {
+                "amt": 210.0,
+                "currency": "CNY",
+                "type": "MIN"
+            }
+        },
+        {
+            "nme": "国际机票早订惠",
+            "img": "//images3.c-ctrip.com/rk/201506/220-75-jp.jpg",
+            "lnk": "http://events.flights.ctrip.com/intlflight/zaodinghui.html#ctm_ref=Iflt_hp_hot_ad_i",
+            "price": {
+                "amt": 280.0,
+                "currency": "CNY",
+                "type": "MIN"
+            }
+        }
+    ],
+    "exNme": "更多特价机票",
+    "exLnk": "http://flights.ctrip.com/international/#ctm_ref=Iflt_hp_hot_ad_i"
+}
