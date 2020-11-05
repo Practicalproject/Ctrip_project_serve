@@ -99,6 +99,26 @@ GET
         AnJi
         WuXi
 
+# 获取携程首页第一板块门票游列表
+
+## URL
+/getIndexTickets
+## 请求方式
+GET
+
+## 请求参数
+
+
+    diqu:
+        ShangHai
+        LongYou
+        ZuoYang
+        GaoYou
+        SheYang
+        YangZhou
+        HeXian
+        HaiAn
+
 # 获取携程全部国家列表
 
 ## URL

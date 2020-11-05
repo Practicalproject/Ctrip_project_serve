@@ -269,18 +269,92 @@ app.use(session({
 
 			//#region 门票 获取携程首页第一板块门票列表
 			; (function () {
-				let JingXuan = require("./datas/zhoubianyou/JingXuan.json")	//精选
-				let ShangHai = require("./datas/zhoubianyou/ShangHai.json")	//上海
-				let HangZhou = require("./datas/zhoubianyou/HangZhou.json")	//杭州
-				let SuZhou = require("./datas/zhoubianyou/SuZhou.json")	//苏州
-				let HuangShan = require("./datas/zhoubianyou/HuangShan.json")	//黄山
-				let NanJing = require("./datas/zhoubianyou/NanJing.json")	//南京
-				let ZhouShan = require("./datas/zhoubianyou/ZhouShan.json")	//舟山
-				let NingBo = require("./datas/zhoubianyou/NingBo.json")	//宁波
-				let AnJi = require("./datas/zhoubianyou/AnJi.json")	//安吉
-				let WuXi = require("./datas/zhoubianyou/WuXi.json")	//无锡
+				let ShangHai = require("./datas/menpiao/ShangHai.json")	//上海
+				let LongYou = require("./datas/menpiao/LongYou.json")	//龙游
+				let ZuoYang = require("./datas/menpiao/ZuoYang.json")	//溧阳
+				let GaoYou = require("./datas/menpiao/GaoYou.json")	//高邮
+				let SheYang = require("./datas/menpiao/SheYang.json")	//射阳
+				let YangZhou = require("./datas/menpiao/YangZhou.json")	//扬州
+				let HeXian = require("./datas/menpiao/HeXian.json")	//和县
+				let HaiAn = require("./datas/menpiao/HaiAn.json")	//海安
 
-				app.get('/getIndexSurrounding', async (request, response) => {
+				app.get('/getIndexTickets', async (request, response) => {
+					let { diqu } = request.query
+					if (diqu === "ShangHai") {
+						response.send({
+							code: 200,
+							msg: 'ok',
+							data: ShangHai
+						})
+						return
+					} else if (diqu === "LongYou") {
+						response.send({
+							code: 200,
+							msg: 'ok',
+							data: LongYou
+						})
+						return
+					} else if (diqu === "ZuoYang") {
+						response.send({
+							code: 200,
+							msg: 'ok',
+							data: ZuoYang
+						})
+						return
+					} else if (diqu === "GaoYou") {
+						response.send({
+							code: 200,
+							msg: 'ok',
+							data: GaoYou
+						})
+						return
+					} else if (diqu === "SheYang") {
+						response.send({
+							code: 200,
+							msg: 'ok',
+							data: SheYang
+						})
+						return
+					} else if (diqu === "YangZhou") {
+						response.send({
+							code: 200,
+							msg: 'ok',
+							data: YangZhou
+						})
+						return
+					} else if (diqu === "HeXian") {
+						response.send({
+							code: 200,
+							msg: 'ok',
+							data: HeXian
+						})
+						return
+					} else if (diqu === "HaiAn") {
+						response.send({
+							code: 200,
+							msg: 'ok',
+							data: HaiAn
+						})
+						return
+					}
+				})
+			})()
+			//#endregion
+
+			//#region 出境游 获取携程首页第一板块出境游列表
+			; (function () {
+				let JingXuan = require("./datas/chujingyou/JingXuan.json")	//精选
+				let RiBen = require("./datas/chujingyou/RiBen.json")	//日本
+				let ZhongGuoAoMen = require("./datas/chujingyou/ZhongGuoAoMen.json")	//中国澳门
+				let TaiGuo = require("./datas/chujingyou/TaiGuo.json")	//泰国
+				let MaErDaiFu = require("./datas/chujingyou/MaErDaiFu.json")	//马尔代夫
+				let BingDao = require("./datas/chujingyou/BingDao.json")	//冰岛
+				let RuiShi = require("./datas/chujingyou/RuiShi.json")	//瑞士
+				let XinJiaPo = require("./datas/chujingyou/XinJiaPo.json")	//新加坡
+				let DongJing = require("./datas/chujingyou/DongJing.json")	//东京
+				let PuJiDao = require("./datas/chujingyou/PuJiDao.json")	//普吉岛
+
+				app.get('/getIndexOverseas', async (request, response) => {
 					let { diqu } = request.query
 					if (diqu === "JingXuan") {
 						response.send({
@@ -289,74 +363,73 @@ app.use(session({
 							data: JingXuan
 						})
 						return
-					} else if (diqu === "ShangHai") {
+					} else if (diqu === "RiBen") {
 						response.send({
 							code: 200,
 							msg: 'ok',
-							data: ShangHai
+							data: RiBen
 						})
 						return
-					} else if (diqu === "HangZhou") {
+					} else if (diqu === "ZhongGuoAoMen") {
 						response.send({
 							code: 200,
 							msg: 'ok',
-							data: HangZhou
+							data: ZhongGuoAoMen
 						})
 						return
-					} else if (diqu === "SuZhou") {
+					} else if (diqu === "TaiGuo") {
 						response.send({
 							code: 200,
 							msg: 'ok',
-							data: SuZhou
+							data: TaiGuo
 						})
 						return
-					} else if (diqu === "HuangShan") {
+					} else if (diqu === "MaErDaiFu") {
 						response.send({
 							code: 200,
 							msg: 'ok',
-							data: HuangShan
+							data: MaErDaiFu
 						})
 						return
-					} else if (diqu === "NanJing") {
+					} else if (diqu === "BingDao") {
 						response.send({
 							code: 200,
 							msg: 'ok',
-							data: NanJing
+							data: BingDao
 						})
 						return
-					} else if (diqu === "ZhouShan") {
+					} else if (diqu === "RuiShi") {
 						response.send({
 							code: 200,
 							msg: 'ok',
-							data: ZhouShan
+							data: RuiShi
 						})
 						return
-					} else if (diqu === "NingBo") {
+					} else if (diqu === "XinJiaPo") {
 						response.send({
 							code: 200,
 							msg: 'ok',
-							data: NingBo
+							data: XinJiaPo
 						})
 						return
-					} else if (diqu === "AnJi") {
+					} else if (diqu === "DongJing") {
 						response.send({
 							code: 200,
 							msg: 'ok',
-							data: AnJi
+							data: DongJing
 						})
 						return
-					} else if (diqu === "WuXi") {
+					} else if (diqu === "PuJiDao") {
 						response.send({
 							code: 200,
 							msg: 'ok',
-							data: WuXi
+							data: PuJiDao
 						})
 						return
 					}
 				})
 			})()
 		//#endregion
-
 
 		// 获取携程全部国家列表
 		let IndexCountry = require("./datas/IndexCountry.json")
