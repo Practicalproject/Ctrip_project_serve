@@ -182,12 +182,15 @@ app.use(session({
 				let JingXuan = require("./datas/zhoubianyou/JingXuan.json")	//精选
 				let ShangHai = require("./datas/zhoubianyou/ShangHai.json")	//上海
 				let HangZhou = require("./datas/zhoubianyou/HangZhou.json")	//杭州
+				let SuZhou = require("./datas/zhoubianyou/SuZhou.json")	//苏州
 				let HuangShan = require("./datas/zhoubianyou/HuangShan.json")	//黄山
 				let NanJing = require("./datas/zhoubianyou/NanJing.json")	//南京
 				let ZhouShan = require("./datas/zhoubianyou/ZhouShan.json")	//舟山
+				let NingBo = require("./datas/zhoubianyou/NingBo.json")	//宁波
 				let AnJi = require("./datas/zhoubianyou/AnJi.json")	//安吉
+				let WuXi = require("./datas/zhoubianyou/WuXi.json")	//无锡
 
-				app.get('/getIndexHot', async (request, response) => {
+				app.get('/getIndexSurrounding', async (request, response) => {
 					let { diqu } = request.query
 					if (diqu === "JingXuan") {
 						response.send({
@@ -208,6 +211,13 @@ app.use(session({
 							code: 200,
 							msg: 'ok',
 							data: HangZhou
+						})
+						return
+					} else if (diqu === "SuZhou") {
+						response.send({
+							code: 200,
+							msg: 'ok',
+							data: SuZhou
 						})
 						return
 					} else if (diqu === "HuangShan") {
@@ -231,6 +241,13 @@ app.use(session({
 							data: ZhouShan
 						})
 						return
+					} else if (diqu === "NingBo") {
+						response.send({
+							code: 200,
+							msg: 'ok',
+							data: NingBo
+						})
+						return
 					} else if (diqu === "AnJi") {
 						response.send({
 							code: 200,
@@ -238,12 +255,107 @@ app.use(session({
 							data: AnJi
 						})
 						return
+					} else if (diqu === "WuXi") {
+						response.send({
+							code: 200,
+							msg: 'ok',
+							data: WuXi
+						})
+						return
+					}
+				})
+			})()
+			//#endregion
+
+			//#region 门票 获取携程首页第一板块门票列表
+			; (function () {
+				let JingXuan = require("./datas/zhoubianyou/JingXuan.json")	//精选
+				let ShangHai = require("./datas/zhoubianyou/ShangHai.json")	//上海
+				let HangZhou = require("./datas/zhoubianyou/HangZhou.json")	//杭州
+				let SuZhou = require("./datas/zhoubianyou/SuZhou.json")	//苏州
+				let HuangShan = require("./datas/zhoubianyou/HuangShan.json")	//黄山
+				let NanJing = require("./datas/zhoubianyou/NanJing.json")	//南京
+				let ZhouShan = require("./datas/zhoubianyou/ZhouShan.json")	//舟山
+				let NingBo = require("./datas/zhoubianyou/NingBo.json")	//宁波
+				let AnJi = require("./datas/zhoubianyou/AnJi.json")	//安吉
+				let WuXi = require("./datas/zhoubianyou/WuXi.json")	//无锡
+
+				app.get('/getIndexSurrounding', async (request, response) => {
+					let { diqu } = request.query
+					if (diqu === "JingXuan") {
+						response.send({
+							code: 200,
+							msg: 'ok',
+							data: JingXuan
+						})
+						return
+					} else if (diqu === "ShangHai") {
+						response.send({
+							code: 200,
+							msg: 'ok',
+							data: ShangHai
+						})
+						return
+					} else if (diqu === "HangZhou") {
+						response.send({
+							code: 200,
+							msg: 'ok',
+							data: HangZhou
+						})
+						return
+					} else if (diqu === "SuZhou") {
+						response.send({
+							code: 200,
+							msg: 'ok',
+							data: SuZhou
+						})
+						return
+					} else if (diqu === "HuangShan") {
+						response.send({
+							code: 200,
+							msg: 'ok',
+							data: HuangShan
+						})
+						return
+					} else if (diqu === "NanJing") {
+						response.send({
+							code: 200,
+							msg: 'ok',
+							data: NanJing
+						})
+						return
+					} else if (diqu === "ZhouShan") {
+						response.send({
+							code: 200,
+							msg: 'ok',
+							data: ZhouShan
+						})
+						return
+					} else if (diqu === "NingBo") {
+						response.send({
+							code: 200,
+							msg: 'ok',
+							data: NingBo
+						})
+						return
+					} else if (diqu === "AnJi") {
+						response.send({
+							code: 200,
+							msg: 'ok',
+							data: AnJi
+						})
+						return
+					} else if (diqu === "WuXi") {
+						response.send({
+							code: 200,
+							msg: 'ok',
+							data: WuXi
+						})
+						return
 					}
 				})
 			})()
 		//#endregion
-
-
 
 
 		// 获取携程全部国家列表

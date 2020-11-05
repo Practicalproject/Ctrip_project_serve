@@ -77,6 +77,28 @@ GET
         MeiZhou
         AoZhongDongFei
 
+# 获取携程首页第一板块周边游列表
+
+## URL
+/getIndexSurrounding
+## 请求方式
+GET
+
+## 请求参数
+
+
+    diqu:
+        JingXuan
+        ShangHai
+        HangZhou
+        SuZhou
+        HuangShan
+        NanJing
+        ZhouShan
+        NingBo
+        AnJi
+        WuXi
+
 # 获取携程全部国家列表
 
 ## URL
