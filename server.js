@@ -179,13 +179,13 @@ app.use(session({
 
 			//#region 周边游 获取携程首页第一板块周边游列表
 			; (function () {
-				let JingXuan = require("./datas/remen/JingXuan.json")	//精选
-				let ShangHai = require("./datas/remen/ShangHai.json")	//上海
-				let HangZhou = require("./datas/remen/HangZhou.json")	//杭州
-				let HuangShan = require("./datas/remen/HuangShan.json")	//黄山
-				let NanJing = require("./datas/remen/NanJing.json")	//南京
-				let ZhouShan = require("./datas/remen/ZhouShan.json")	//舟山
-				let AnJi = require("./datas/remen/AnJi.json")	//安吉
+				let JingXuan = require("./datas/zhoubianyou/JingXuan.json")	//精选
+				let ShangHai = require("./datas/zhoubianyou/ShangHai.json")	//上海
+				let HangZhou = require("./datas/zhoubianyou/HangZhou.json")	//杭州
+				let HuangShan = require("./datas/zhoubianyou/HuangShan.json")	//黄山
+				let NanJing = require("./datas/zhoubianyou/NanJing.json")	//南京
+				let ZhouShan = require("./datas/zhoubianyou/ZhouShan.json")	//舟山
+				let AnJi = require("./datas/zhoubianyou/AnJi.json")	//安吉
 
 				app.get('/getIndexHot', async (request, response) => {
 					let { diqu } = request.query
