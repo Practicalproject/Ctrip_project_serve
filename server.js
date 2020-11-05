@@ -432,7 +432,7 @@ app.use(session({
 			//#endregion
 
 
-			//#region 获取携程首页 海外酒店 板块数据
+			//#region 获取携程首页第二板块 海外酒店 板块数据
 			; (function () {
 				let ReMenChengShi = require("./datas/haiwaijiudian/ReMenChengShi.json")
 				let DuShiGouWu = require("./datas/haiwaijiudian/DuShiGouWu.json")
@@ -471,8 +471,68 @@ app.use(session({
 					}
 				})
 			})()
-		//#endregion
+			//#endregion
 
+			//#region 获取携程首页第二板块 海外民宿+短租 板块数据
+			; (function () {
+				let haiwaiduanzu = require("./datas/haiwaiduanzu")
+				app.get('/getIndexRentals', async (request, response) => {
+					response.send({
+						code: 200,
+						msg: 'ok',
+						data: haiwaiduanzu
+					})
+				})
+			})()
+			//#endregion
+
+			//#region 获取携程首页第三板块 国际•港澳台特价机票 板块数据
+			; (function () {
+				let IndexInternational = require("./datas/guojigangao/IndexInternational.json")
+				let yazhou = require("./datas/guojigangao/yazhou.json")
+				let ouzhou = require("./datas/guojigangao/ouzhou.json")
+				let meizhou = require("./datas/guojigangao/meizhou.json")
+				let feizhou = require("./datas/guojigangao/feizhou.json")
+				app.get('/getIndexInternational', async (request, response) => {
+					// 拿到gp为键的属性值
+					let { gp } = request.query
+					if (gp === "YaZhou") {
+						response.send({
+							code: 200,
+							msg: 'ok',
+							data: yazhou
+						})
+						return
+					} else if (gp === "OuZhou") {
+						response.send({
+							code: 200,
+							msg: 'ok',
+							data: ouzhou
+						})
+						return
+					} else if (gp === "MeiZhou") {
+						response.send({
+							code: 200,
+							msg: 'ok',
+							data: meizhou
+						})
+						return
+					} else if (gp === "FeiZhou") {
+						response.send({
+							code: 200,
+							msg: 'ok',
+							data: feizhou
+						})
+						return
+					}
+					response.send({
+						code: 200,
+						msg: 'ok',
+						data: IndexInternational
+					})
+				})
+			})()
+		//#endregion
 
 
 		// 获取携程全部国家列表
@@ -484,52 +544,6 @@ app.use(session({
 				data: IndexCountry
 			})
 		})
-
-		// 获取携程首页国际•港澳台特价机票
-		let IndexInternational = require("./datas/guojigangao/IndexInternational.json")
-		let yazhou = require("./datas/guojigangao/yazhou.json")
-		let ouzhou = require("./datas/guojigangao/ouzhou.json")
-		let meizhou = require("./datas/guojigangao/meizhou.json")
-		let feizhou = require("./datas/guojigangao/feizhou.json")
-		app.get('/getIndexInternational', async (request, response) => {
-			// 拿到gp为键的属性值
-			let { gp } = request.query
-			if (gp === "YaZhou") {
-				response.send({
-					code: 200,
-					msg: 'ok',
-					data: yazhou
-				})
-				return
-			} else if (gp === "OuZhou") {
-				response.send({
-					code: 200,
-					msg: 'ok',
-					data: ouzhou
-				})
-				return
-			} else if (gp === "MeiZhou") {
-				response.send({
-					code: 200,
-					msg: 'ok',
-					data: meizhou
-				})
-				return
-			} else if (gp === "FeiZhou") {
-				response.send({
-					code: 200,
-					msg: 'ok',
-					data: feizhou
-				})
-				return
-			}
-			response.send({
-				code: 200,
-				msg: 'ok',
-				data: IndexInternational
-			})
-		})
-
 
 		// 获取携程首页境外租车
 		let IndexCarRental = require("./datas/IndexCarRental.json")
