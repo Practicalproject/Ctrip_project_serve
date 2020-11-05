@@ -101,7 +101,12 @@ GET
 
 ## 请求参数
 
-无
+gp:
+    YaZhou
+    OuZhou
+    MeiZhou
+    FeiZhou
+    
 
 # 获取携程首页境外租车
 

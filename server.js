@@ -146,8 +146,42 @@ app.use(session({
 		})
 
 		// 获取携程首页国际•港澳台特价机票
-		let IndexInternational = require("./datas/IndexInternational.json")
+		let IndexInternational = require("./datas/guojigangao/IndexInternational.json")
+		let yazhou = require("./datas/guojigangao/yazhou.json")
+		let ouzhou = require("./datas/guojigangao/ouzhou.json")
+		let meizhou = require("./datas/guojigangao/meizhou.json")
+		let feizhou = require("./datas/guojigangao/feizhou.json")
 		app.get('/getIndexInternational', async (request, response) => {
+			let { gp } = request.query
+			if (gp === "YaZhou") {
+				response.send({
+					code: 200,
+					msg: 'ok',
+					data: yazhou
+				})
+				return
+			} else if (gp === "OuZhou") {
+				response.send({
+					code: 200,
+					msg: 'ok',
+					data: ouzhou
+				})
+				return
+			} else if (gp === "MeiZhou") {
+				response.send({
+					code: 200,
+					msg: 'ok',
+					data: meizhou
+				})
+				return
+			} else if (gp === "FeiZhou") {
+				response.send({
+					code: 200,
+					msg: 'ok',
+					data: feizhou
+				})
+				return
+			}
 			response.send({
 				code: 200,
 				msg: 'ok',
