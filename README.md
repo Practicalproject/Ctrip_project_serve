@@ -129,11 +129,39 @@ GET
 
 无
 
-# 获取携程首页境外租车
+# 获取携程首页热门目的地
 
 ## URL
 /getIndexPlay
 ## 请求方式
+GET
+
+## 请求参数
+
+无
+
+# 获取携程首页全球购
+
+## URL
+
+/getGlobalPurchasing
+
+## 请求方式
+
+GET
+
+## 请求参数
+
+无
+
+# 获取携程首页目的地攻略
+
+## URL
+
+/getDestinationGuide
+
+## 请求方式
+
 GET
 
 ## 请求参数
