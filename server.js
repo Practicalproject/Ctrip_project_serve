@@ -166,9 +166,7 @@ app.use(session({
 			})
 		})
 
-
-		
-		// 获取携程首页境外租车
+		// 热门目的地
 		let IndexPlay = require("./datas/IndexPlay.json")
 		app.get('/getIndexPlay', async (request, response) => {
 			response.send({
@@ -178,7 +176,25 @@ app.use(session({
 			})
 		})
 
+		// 全球购
+		let GlobalPurchasing = require("./datas/GlobalPurchasing.json")
+		app.get('/getGlobalPurchasing', async (request, response) => {
+			response.send({
+				code: 200,
+				msg: 'ok',
+				data: GlobalPurchasing
+			})
+		})
 
+		// 目的地攻略
+		let DestinationGuide = require("./datas/DestinationGuide.json")
+		app.get('/getDestinationGuide', async (request, response) => {
+			response.send({
+				code: 200,
+				msg: 'ok',
+				data: DestinationGuide
+			})
+		})
 
 		app.listen(8080, (err) => {
 			if (!err) console.log('服务器ok了');

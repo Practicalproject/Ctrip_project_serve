@@ -1,0 +1,142 @@
+{
+    "tags": {
+        "itemLst": [
+            {
+                "nme": "澳门",
+                "lnk": "http://g.ctrip.com/merchant/list/0o0o99999o232o99o999o99?gsourcetype=3",
+                "isHot": "Y"
+            },
+            {
+                "nme": "法国",
+                "lnk": "http://g.ctrip.com/merchant/list/0o0o99999o34369o99o999o99?gsourcetype=3",
+                "isHot": ""
+            },
+            {
+                "nme": "日本",
+                "lnk": "http://g.ctrip.com/merchant/list/0o78o99999o99999o99o999o99?gsourcetype=3",
+                "isHot": ""
+            },
+            {
+                "nme": "阿联酋",
+                "lnk": "http://g.ctrip.com/merchant/list/0o9o99999o99999o99o999o99?gsourcetype=3",
+                "isHot": ""
+            },
+            {
+                "nme": "英国",
+                "lnk": "http://g.ctrip.com/merchant/list/0o0o99999o34444o99o999o99?gsourcetype=3",
+                "isHot": ""
+            },
+            {
+                "nme": "意大利",
+                "lnk": "http://g.ctrip.com/merchant/list/0o95o99999o99999o99o999o99?gsourcetype=3",
+                "isHot": ""
+            },
+            {
+                "nme": "香港",
+                "lnk": "http://g.ctrip.com/merchant/list/0o0o99999o231o99o999o99?gsourcetype=3",
+                "isHot": ""
+            },
+            {
+                "nme": "新加坡",
+                "lnk": "http://g.ctrip.com/merchant/list/0o0o99999o111o99o999o99?gsourcetype=3",
+                "isHot": ""
+            },
+            {
+                "nme": "西班牙",
+                "lnk": "http://g.ctrip.com/merchant/list/0o95o99999o99999o99o999o99?gsourcetype=3",
+                "isHot": ""
+            },
+            {
+                "nme": "韩国",
+                "lnk": "http://g.ctrip.com/merchant/list/0o0o99999o34380o99o999o99?gsourcetype=3",
+                "isHot": ""
+            },
+            {
+                "nme": "泰国",
+                "lnk": "http://g.ctrip.com/merchant/list/0o108o99999o99999o99o999o99?gsourcetype=3",
+                "isHot": "Y"
+            },
+            {
+                "nme": "澳大利亚",
+                "lnk": "http://g.ctrip.com/merchant/list/0o15o99999o99999o99o999o99?gsourcetype=3",
+                "isHot": ""
+            },
+            {
+                "nme": "德国",
+                "lnk": "http://g.ctrip.com/merchant/list/0o0o99999o34366o99o999o99?gsourcetype=3",
+                "isHot": ""
+            },
+            {
+                "nme": "新西兰",
+                "lnk": "http://g.ctrip.com/merchant/list/0o98o99999o99999o99o999o99?gsourcetype=3",
+                "isHot": ""
+            },
+            {
+                "nme": "俄罗斯",
+                "lnk": "http://g.ctrip.com/merchant/list/0o0o99999o72o99o999o99?gsourcetype=3",
+                "isHot": ""
+            },
+            {
+                "nme": "美国",
+                "lnk": "http://g.ctrip.com/merchant/list/0o66o99999o99999o99o999o99?gsourcetype=3",
+                "isHot": ""
+            }
+        ]
+    },
+    "prdLst": [
+        {
+            "nme": "伦敦比斯特购物村 Bicester Village",
+            "img": "//images4.c-ctrip.com/target/zd0e1g000001hkq4a2922_C_570_285.jpg",
+            "lnk": "http://g.ctrip.com/merchant/detail/9216?gsourcetype=3",
+            "subNme": "英国 &#8226; 伦敦",
+            "profile": "英国",
+            "disct": "<span class=\"tag_yellow_empty\">促销</span><span class=\"tag_orange_empty\">返现</span>"
+        },
+        {
+            "nme": "高岛屋（新宿店） Takashimaya（Shinjuku Store）",
+            "img": "//images4.c-ctrip.com/target/zd0w0j000000b7c8g09C8_C_570_285.jpg",
+            "lnk": "http://g.ctrip.com/merchant/detail/9672?gsourcetype=3",
+            "subNme": "日本 &#8226; 东京",
+            "profile": "日本",
+            "disct": "<span class=\"tag_orange_empty\">返现</span>"
+        },
+        {
+            "nme": "雅丽—国际品牌免税店（威尼斯人购物中心店） The Atrium",
+            "img": "//images4.c-ctrip.com/target/zd0b1800000148dpn88E1_C_570_285.jpg",
+            "lnk": "http://g.ctrip.com/merchant/detail/7663?gsourcetype=3",
+            "subNme": "中国 &#8226; 澳门",
+            "profile": "中国",
+            "disct": "<span class=\"tag_yellow_empty\">促销</span>"
+        },
+        {
+            "nme": "迪拜国际机场T3航站楼C出发厅（迪拜纪念品区店） CC Gifts from Dubai",
+            "img": "//images4.c-ctrip.com/target/zd0d0f0000007ckfk0B0C_C_570_285.jpg",
+            "lnk": "http://g.ctrip.com/merchant/detail/45257?gsourcetype=3",
+            "subNme": "阿联酋 &#8226; 迪拜",
+            "profile": "阿联酋",
+            "disct": "<span class=\"tag_yellow_empty\">促销</span>"
+        }
+    ],
+    "tabs": [
+        {
+            "tabNme": "热门商户",
+            "pinyin": "ReMenShangHu"
+        },
+        {
+            "tabNme": "新店首选",
+            "pinyin": "XinDianShouXuan"
+        },
+        {
+            "tabNme": "奢品大牌",
+            "pinyin": "ShePinDaPai"
+        },
+        {
+            "tabNme": "口碑推荐",
+            "pinyin": "KouBeiTuiJian"
+        },
+        {
+            "tabNme": "综合商场",
+            "pinyin": "ZongHeShangChang"
+        }
+    ]
+}
