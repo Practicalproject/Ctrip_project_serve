@@ -68,7 +68,14 @@ GET
 
 ## 请求参数
 
-无
+
+    diqu:
+        JingNei
+        RiBen
+        DongNanYa
+        OuZhou
+        MeiZhou
+        AoZhongDongFei
 
 # 获取携程全部国家列表
 
@@ -101,12 +108,15 @@ GET
 
 ## 请求参数
 
+```
 gp:
     YaZhou
     OuZhou
     MeiZhou
     FeiZhou
-    
+```
+
+不传参默认为热门往返
 
 # 获取携程首页境外租车
 

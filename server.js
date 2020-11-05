@@ -15,7 +15,8 @@ const session = require('express-session');
 const MongoStore = require('connect-mongo')(session);
 
 //引入md5加密
-const md5 = require('md5')
+const md5 = require('md5');
+const e = require('express');
 // const sha1 = require('sha1')
 
 //创建一个服务对象
@@ -49,6 +50,8 @@ app.use(session({
 	; (async () => {
 		//等待数据库连接
 		await db
+
+		//#region 登陆注册的接口
 		//响应用户注册
 		app.post('/register', async (request, response) => {
 			//获取客户端传递过来的：邮箱、密码、昵称
@@ -114,17 +117,135 @@ app.use(session({
 				})
 			}
 		})
+			//#endregion
+
+			//#region 热门 获取携程首页第一板块热门列表
+			; (function () {
+				let JingNei = require("./datas/remen/JingNei.json")	//境内
+				let RiBen = require("./datas/remen/RiBen.json")	//日本
+				let DongNanYa = require("./datas/remen/DongNanYa.json")	//东南亚
+				let OuZhou = require("./datas/remen/OuZhou.json")	//欧洲
+				let MeiZhou = require("./datas/remen/MeiZhou.json")	//美洲
+				let AoZhongDongFei = require("./datas/remen/AoZhongDongFei.json")	//澳中东非
+
+				app.get('/getIndexHot', async (request, response) => {
+					let { diqu } = request.query
+					if (diqu === "JingNei") {
+						response.send({
+							code: 200,
+							msg: 'ok',
+							data: JingNei
+						})
+						return
+					} else if (diqu === "RiBen") {
+						response.send({
+							code: 200,
+							msg: 'ok',
+							data: RiBen
+						})
+						return
+					} else if (diqu === "DongNanYa") {
+						response.send({
+							code: 200,
+							msg: 'ok',
+							data: DongNanYa
+						})
+						return
+					} else if (diqu === "OuZhou") {
+						response.send({
+							code: 200,
+							msg: 'ok',
+							data: OuZhou
+						})
+						return
+					} else if (diqu === "MeiZhou") {
+						response.send({
+							code: 200,
+							msg: 'ok',
+							data: MeiZhou
+						})
+						return
+					} else if (diqu === "AoZhongDongFei") {
+						response.send({
+							code: 200,
+							msg: 'ok',
+							data: AoZhongDongFei
+						})
+						return
+					}
+				})
+			})()
+			//#endregion
+
+			//#region 周边游 获取携程首页第一板块周边游列表
+			; (function () {
+				let JingXuan = require("./datas/remen/JingXuan.json")	//精选
+				let ShangHai = require("./datas/remen/ShangHai.json")	//上海
+				let HangZhou = require("./datas/remen/HangZhou.json")	//杭州
+				let HuangShan = require("./datas/remen/HuangShan.json")	//黄山
+				let NanJing = require("./datas/remen/NanJing.json")	//南京
+				let ZhouShan = require("./datas/remen/ZhouShan.json")	//舟山
+				let AnJi = require("./datas/remen/AnJi.json")	//安吉
+
+				app.get('/getIndexHot', async (request, response) => {
+					let { diqu } = request.query
+					if (diqu === "JingXuan") {
+						response.send({
+							code: 200,
+							msg: 'ok',
+							data: JingXuan
+						})
+						return
+					} else if (diqu === "ShangHai") {
+						response.send({
+							code: 200,
+							msg: 'ok',
+							data: ShangHai
+						})
+						return
+					} else if (diqu === "HangZhou") {
+						response.send({
+							code: 200,
+							msg: 'ok',
+							data: HangZhou
+						})
+						return
+					} else if (diqu === "HuangShan") {
+						response.send({
+							code: 200,
+							msg: 'ok',
+							data: HuangShan
+						})
+						return
+					} else if (diqu === "NanJing") {
+						response.send({
+							code: 200,
+							msg: 'ok',
+							data: NanJing
+						})
+						return
+					} else if (diqu === "ZhouShan") {
+						response.send({
+							code: 200,
+							msg: 'ok',
+							data: ZhouShan
+						})
+						return
+					} else if (diqu === "AnJi") {
+						response.send({
+							code: 200,
+							msg: 'ok',
+							data: AnJi
+						})
+						return
+					}
+				})
+			})()
+		//#endregion
 
 
-		// 获取携程首页第一板块热门列表
-		let IndexHot = require("./datas/IndexHot.json")
-		app.get('/getIndexHot', async (request, response) => {
-			response.send({
-				code: 200,
-				msg: 'ok',
-				data: IndexHot
-			})
-		})
+
+
 		// 获取携程全部国家列表
 		let IndexCountry = require("./datas/IndexCountry.json")
 		app.get('/getIndexCountry', async (request, response) => {
@@ -152,6 +273,7 @@ app.use(session({
 		let meizhou = require("./datas/guojigangao/meizhou.json")
 		let feizhou = require("./datas/guojigangao/feizhou.json")
 		app.get('/getIndexInternational', async (request, response) => {
+			// 拿到gp为键的属性值
 			let { gp } = request.query
 			if (gp === "YaZhou") {
 				response.send({
@@ -230,8 +352,8 @@ app.use(session({
 			})
 		})
 
-		app.listen(8080, (err) => {
-			if (!err) console.log('服务器ok了');
+		app.listen(2506, (err) => {
+			if (!err) console.log('服务器ok了 http://localhost:2506/');
 			else console.log(err);
 		})
 
