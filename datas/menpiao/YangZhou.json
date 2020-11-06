@@ -1,0 +1,202 @@
+{
+    "tabContentLst": [
+        {
+            "img": "https://youimg1.c-ctrip.com/target/010371200084n0d1n3C38_C_220_110.jpg",
+            "prdNme": "瘦西湖",
+            "price": {
+                "amt": 95.0,
+                "currency": "CNY",
+                "type": "min"
+            },
+            "prdLnk": "https://you.ctrip.com/sight/0/1891.html",
+            "level": 5.0,
+            "levelTyp": "S",
+            "sales": 0,
+            "total": 0,
+            "sort": 0
+        },
+        {
+            "img": "https://youimg1.c-ctrip.com/target/0105y1200084na864907C_C_220_110.jpg",
+            "prdNme": "个园",
+            "price": {
+                "amt": 43.0,
+                "currency": "CNY",
+                "type": "min"
+            },
+            "prdLnk": "https://you.ctrip.com/sight/0/1896.html",
+            "level": 4.0,
+            "levelTyp": "S",
+            "sales": 0,
+            "total": 0,
+            "sort": 0
+        },
+        {
+            "img": "https://youimg1.c-ctrip.com/target/100o1f000001gp49bF65B_C_220_110.jpg",
+            "prdNme": "扬州古运河",
+            "price": {
+                "amt": 50.0,
+                "currency": "CNY",
+                "type": "min"
+            },
+            "prdLnk": "https://you.ctrip.com/sight/0/50923.html",
+            "level": 0.0,
+            "levelTyp": "S",
+            "sales": 0,
+            "total": 0,
+            "sort": 0
+        },
+        {
+            "img": "https://youimg1.c-ctrip.com/target/01006120005vcynyg9F25_C_220_110.jpg",
+            "prdNme": "大明寺",
+            "price": {
+                "amt": 45.0,
+                "currency": "CNY",
+                "type": "min"
+            },
+            "prdLnk": "https://you.ctrip.com/sight/0/1894.html",
+            "level": 4.0,
+            "levelTyp": "S",
+            "sales": 0,
+            "total": 0,
+            "sort": 0
+        },
+        {
+            "img": "https://youimg1.c-ctrip.com/target/010411200084nbpdt9AEA_C_220_110.jpg",
+            "prdNme": "何园",
+            "price": {
+                "amt": 43.0,
+                "currency": "CNY",
+                "type": "min"
+            },
+            "prdLnk": "https://you.ctrip.com/sight/0/1897.html",
+            "level": 4.0,
+            "levelTyp": "S",
+            "sales": 0,
+            "total": 0,
+            "sort": 0
+        },
+        {
+            "img": "https://youimg1.c-ctrip.com/target/tg/723/867/092/b80df162918d418bb293b1c81a372e6c_C_220_110.jpg",
+            "prdNme": "茱萸湾风景区",
+            "price": {
+                "amt": 43.0,
+                "currency": "CNY",
+                "type": "min"
+            },
+            "prdLnk": "https://you.ctrip.com/sight/0/50879.html",
+            "level": 4.0,
+            "levelTyp": "S",
+            "sales": 0,
+            "total": 0,
+            "sort": 0
+        }
+    ],
+    "name": "扬州",
+    "catgId": 16,
+    "dptID": 0,
+    "themeLst": [
+        {
+            "nme": "门票9元起",
+            "url": "http://pages.c-ctrip.com/commerce/promote/common/tpl5.0/index.html?promoteid=561&ctm_ref=vdc_ctm_254"
+        },
+        {
+            "nme": "当季热卖",
+            "url": "http://pages.c-ctrip.com/commerce/promote/common/tpl5.0/index.html?promoteid=590&ctm_ref=vdc_ctm_418"
+        },
+        {
+            "nme": "全球乐园",
+            "url": "http://pages.ctrip.com/commerce/promote/201408/vacation/wanlezhinan/web/park/park.html"
+        }
+    ],
+    "hotLnks": [
+        {
+            "nme": "东方明珠",
+            "lnk": "http://piao.ctrip.com/dest/t762.html"
+        },
+        {
+            "nme": "世纪公园",
+            "lnk": "http://piao.ctrip.com/dest/t3757.html"
+        },
+        {
+            "nme": "顾村公园",
+            "lnk": "http://piao.ctrip.com/dest/t107854.html"
+        },
+        {
+            "nme": "欢乐谷",
+            "lnk": "http://piao.ctrip.com/dest/t65957.html"
+        },
+        {
+            "nme": "上海科技馆",
+            "lnk": "http://piao.ctrip.com/dest/t18308.html"
+        },
+        {
+            "nme": "周浦花海",
+            "lnk": "http://piao.ctrip.com/dest/t1473591.html"
+        },
+        {
+            "nme": "金茂大厦",
+            "lnk": "http://piao.ctrip.com/dest/t739.html"
+        },
+        {
+            "nme": "锦江乐园",
+            "lnk": "http://piao.ctrip.com/dest/t748.html"
+        },
+        {
+            "nme": "上海马戏城",
+            "lnk": "http://piao.ctrip.com/dest/t49031.html"
+        },
+        {
+            "nme": "大观园",
+            "lnk": "http://piao.ctrip.com/dest/t5673.html"
+        },
+        {
+            "nme": "碧海金沙",
+            "lnk": "http://piao.ctrip.com/dest/t47969.html"
+        },
+        {
+            "nme": "枫泾古镇",
+            "lnk": "http://piao.ctrip.com/dest/t49029.html"
+        }
+    ],
+    "destCitys": [
+        {
+            "nme": "上海",
+            "pinyin": "ShangHai"
+        },
+        {
+            "nme": "龙游",
+            "pinyin": "LongYou"
+        },
+        {
+            "nme": "溧阳",
+            "pinyin": "ZuoYang"
+        },
+        {
+            "nme": "高邮",
+            "pinyin": "GaoYou"
+        },
+        {
+            "nme": "射阳",
+            "pinyin": "SheYang"
+        },
+        {
+            "nme": "扬州",
+            "pinyin": "YangZhou"
+        },
+        {
+            "nme": "和县",
+            "pinyin": "HeXian"
+        },
+        {
+            "nme": "海安",
+            "pinyin": "HaiAn"
+        }
+    ],
+    "adLst": [
+        {
+            "img": "https://dimg04.c-ctrip.com/images/0304h120000uz1eh6A9FC.jpg",
+            "url": "https://pages.c-ctrip.com/ttd/manu/201808/ticket-market/index.html?disable_webview_cache_key=1&ctm_ref=vactang_1024_16",
+            "alt": "门票9元起"
+        }
+    ]
+}

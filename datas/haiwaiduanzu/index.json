@@ -1,0 +1,120 @@
+{
+    "CategoryID": 6,
+    "exNme": "更多海外民宿",
+    "exLnk": "http://hotels.ctrip.com/apartment",
+    "prdLst": [
+        {
+            "nme": "曼谷",
+            "img": "//pic.c-ctrip.com/htlpic/inn/pic/ctriphome/pic_220_160_1.jpg",
+            "count": 433,
+            "lnk": "http://hotels.ctrip.com/apartment/bangkok359",
+            "logoLnk": null,
+            "score": 0.0,
+            "commt": 0,
+            "des": "寻求心灵的净化",
+            "innprice": 0.0,
+            "catgNme": "1"
+        },
+        {
+            "nme": "博福特楼公寓酒店",
+            "img": "//pic.c-ctrip.com/htlpic/inn/pic/ctriphome/pic_220_160_2.jpg",
+            "count": 0,
+            "lnk": "http://hotels.ctrip.com/apartment/1808704.html",
+            "logoLnk": null,
+            "score": 4.6,
+            "commt": 0,
+            "des": null,
+            "innprice": 1485.0,
+            "catgNme": "2"
+        },
+        {
+            "nme": "京都",
+            "img": "//pic.c-ctrip.com/htlpic/inn/pic/ctriphome/pic_220_160_3.jpg",
+            "count": 200,
+            "lnk": "http://hotels.ctrip.com/apartment/kyoto734",
+            "logoLnk": null,
+            "score": 0.0,
+            "commt": 0,
+            "des": "清水寺前小径斜",
+            "innprice": 0.0,
+            "catgNme": "1"
+        },
+        {
+            "nme": "东京考山武士胶囊旅舍",
+            "img": "//pic.c-ctrip.com/htlpic/inn/pic/ctriphome/pic_220_160_4.jpg",
+            "count": 0,
+            "lnk": "http://hotels.ctrip.com/apartment/2458108.html",
+            "logoLnk": null,
+            "score": 0.0,
+            "commt": 0,
+            "des": null,
+            "innprice": 0.0,
+            "catgNme": "2"
+        },
+        {
+            "nme": "清迈",
+            "img": "//pic.c-ctrip.com/htlpic/inn/pic/ctriphome/pic_220_160_5.jpg",
+            "count": 343,
+            "lnk": "http://hotels.ctrip.com/apartment/chiangmai623",
+            "logoLnk": null,
+            "score": 0.0,
+            "commt": 0,
+            "des": "时间凝固在有故事的城",
+            "innprice": 0.0,
+            "catgNme": "1"
+        },
+        {
+            "nme": "Dfeel Hostel Phuket(普吉岛蒂菲尔旅馆)",
+            "img": "//pic.c-ctrip.com/htlpic/inn/pic/ctriphome/pic_220_160_6.jpg",
+            "count": 0,
+            "lnk": "http://hotels.ctrip.com/apartment/1525590.html",
+            "logoLnk": null,
+            "score": 3.4,
+            "commt": 0,
+            "des": null,
+            "innprice": 0.0,
+            "catgNme": "2"
+        },
+        {
+            "nme": "游新加坡感受古典和现代的融合",
+            "img": "//pic.c-ctrip.com/htlpic/inn/pic/pic_rec09_ctriphome.jpg",
+            "count": 0,
+            "lnk": "http://hotels.ctrip.com/apartment/1739174.html",
+            "logoLnk": null,
+            "score": 0.0,
+            "commt": 0,
+            "des": "距离牛水车步行可达",
+            "innprice": 0.0,
+            "catgNme": "3"
+        },
+        {
+            "nme": "是个造型独特新颖的旅馆，门票40000越盾",
+            "img": "//pic.c-ctrip.com/htlpic/inn/pic/ctriphome/pic_220_160_7.jpg",
+            "count": 0,
+            "lnk": "http://hotels.ctrip.com/apartment/1188158.html",
+            "logoLnk": "//pic.c-ctrip.com/hotelinternational121211/inn/user/pic_face03.jpg",
+            "score": 0.0,
+            "commt": 0,
+            "des": null,
+            "innprice": 0.0,
+            "catgNme": "4"
+        },
+        {
+            "nme": "泰国典型别墅<br />加花园泳池",
+            "img": "//pic.c-ctrip.com/htlpic/inn/pic/ctriphome/pic_220_160_8.jpg",
+            "count": 0,
+            "lnk": "http://hotels.ctrip.com/apartment/1547654.html",
+            "logoLnk": "//pic.c-ctrip.com/hotelinternational121211/inn/user/pic_face01.jpg",
+            "score": 0.0,
+            "commt": 0,
+            "des": null,
+            "innprice": 0.0,
+            "catgNme": "4"
+        }
+    ],
+    "tabs": [
+        {
+            "tabNme": ""
+        }
+    ]
+}

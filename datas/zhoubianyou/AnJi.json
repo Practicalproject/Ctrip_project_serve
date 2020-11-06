@@ -1,0 +1,255 @@
+{
+    "tabContentLst": [
+        {
+            "img": "https://dimg04.c-ctrip.com/images/300n19000001805e048C2_C_228_132.jpg",
+            "prdNme": "浙江安吉2日1晚跟团游(4钻)·【登山·打卡网红】灵溪山景区+空中飞碟（悬挑360玻璃观景平台）+藏龙百瀑，宿舒适酒店【浙里好玩】",
+            "price": {
+                "amt": 299.0
+            },
+            "prdLnk": "//vacations.ctrip.com/tour/detail/p22901288s2.html",
+            "level": 4.0,
+            "levelTyp": "D",
+            "sales": 0,
+            "total": 0,
+            "sort": 0
+        },
+        {
+            "img": "https://dimg04.c-ctrip.com/images/0301t1200081pyl23FEB5_C_228_132.jpg",
+            "prdNme": "安吉3日自由行(5钻)·【打卡云上草原】自驾游+网红项目一次体验+周边特色民宿/酒店任选&连住2晚|情侣&亲子热爱，刷爆朋友圈",
+            "price": {
+                "amt": 463.0
+            },
+            "prdLnk": "//vacations.ctrip.com/tour/detail/p1020392582s2.html",
+            "level": 5.0,
+            "levelTyp": "D",
+            "sales": 0,
+            "total": 0,
+            "sort": 0
+        },
+        {
+            "img": "https://dimg03.c-ctrip.com/images/200713000000w39o35D23_C_228_132.jpg",
+            "prdNme": "浙江安吉2日1晚跟团游(4钻)·【登山·打卡网红】灵溪山景区+空中飞碟（悬挑360玻璃观景平台）+藏龙百瀑，宿5钻酒店【浙里好玩】",
+            "price": {
+                "amt": 489.0
+            },
+            "prdLnk": "//vacations.ctrip.com/tour/detail/p24555270s2.html",
+            "level": 4.0,
+            "levelTyp": "D",
+            "sales": 0,
+            "total": 0,
+            "sort": 0
+        },
+        {
+            "img": "https://dimg04.c-ctrip.com/images/300d0t000000ig1h3C67F_C_228_132.jpg",
+            "prdNme": "安吉2日自由行(5钻)·【网红酒店】安吉涵田度假村1晚+自驾游+部分房型『含』当日双人温泉+精美点心+另有漂流/Hello Kitty乐园/中国大竹海可选",
+            "price": {
+                "amt": 362.0
+            },
+            "prdLnk": "//vacations.ctrip.com/tour/detail/p1020317852s2.html",
+            "level": 5.0,
+            "levelTyp": "D",
+            "sales": 0,
+            "total": 0,
+            "sort": 0
+        },
+        {
+            "img": "https://dimg03.c-ctrip.com/images/200g14000000vtmp8CF58_C_228_132.jpg",
+            "prdNme": "浙江安吉3日2晚私家团(4钻)·『高铁往返』·当地包车轻松游·【宿含云·山奢酒店】静卧山水间·loft空中别墅+【打卡·云上草原】飞拉达/凌空飞步/悬崖秋千/彩虹滑草",
+            "price": {
+                "amt": 2953.0
+            },
+            "prdLnk": "//vacations.ctrip.com/tour/detail/p27352624s2.html",
+            "level": 4.0,
+            "levelTyp": "D",
+            "sales": 0,
+            "total": 0,
+            "sort": 0
+        },
+        {
+            "img": "https://dimg04.c-ctrip.com/images/0304h1200081pyj0vE65C_C_228_132.jpg",
+            "prdNme": "安吉2日自由行·【打卡云上草原】抖音网红项目一次全打卡+挑战极限+周边特色民宿任选+自驾游|情侣&亲子热爱，“疯”玩一下",
+            "price": {
+                "amt": 332.0
+            },
+            "prdLnk": "//vacations.ctrip.com/tour/detail/p1019310128s2.html",
+            "level": 3.0,
+            "levelTyp": "D",
+            "sales": 0,
+            "total": 0,
+            "sort": 0
+        },
+        {
+            "img": "https://dimg04.c-ctrip.com/images/300p180000013cmghDF3F_C_228_132.jpg",
+            "prdNme": "浙江安吉2日1晚私家团(5钻)·【中国大竹海】+【余村】+【云系生活】一票畅玩·【云上草原】（飞拉达/凌空飞步/悬崖秋千/彩虹滑草）+宿5钻酒店【10人起订，价更低】",
+            "price": {
+                "amt": 1323.0
+            },
+            "prdLnk": "//vacations.ctrip.com/tour/detail/p27585852s2.html",
+            "level": 5.0,
+            "levelTyp": "D",
+            "sales": 0,
+            "total": 0,
+            "sort": 0
+        },
+        {
+            "img": "https://dimg04.c-ctrip.com/images/0305e120002262hl1EBF1_C_228_132.jpg",
+            "prdNme": "中国浙江安吉云上草原2日1晚自由行·双人云上草原住舍里民宿，舍里那山那舍民宿",
+            "price": {
+                "amt": 464.0
+            },
+            "prdLnk": "//vacations.ctrip.com/tour/detail/p26901296s2.html",
+            "level": 0.0,
+            "levelTyp": "D",
+            "sales": 0,
+            "total": 0,
+            "sort": 0
+        }
+    ],
+    "name": "安吉",
+    "catgId": 3,
+    "dptID": 0,
+    "exNme": "安吉",
+    "exLnk": "//vacations.ctrip.com/list/whole/d-anji-686.html?salecity=2",
+    "themeLst": [
+        {
+            "pinyin": "HaiDao",
+            "nme": "海岛",
+            "url": "//vacations.ctrip.com/list/whole/sc2.html?sv=%e6%b5%b7%e5%b2%9b&st=%e6%b5%b7%e5%b2%9b",
+            "isHot": "N"
+        },
+        {
+            "pinyin": "GuZhen",
+            "nme": "古镇",
+            "url": "//vacations.ctrip.com/list/whole/sc2.html?sv=%e5%8f%a4%e9%95%87&st=%e5%8f%a4%e9%95%87",
+            "isHot": "N"
+        },
+        {
+            "pinyin": "MiYue",
+            "nme": "蜜月",
+            "url": "//vacations.ctrip.com/list/whole/sc2.html?sv=%e8%9c%9c%e6%9c%88&st=%e8%9c%9c%e6%9c%88",
+            "isHot": "N"
+        },
+        {
+            "pinyin": "QinZi",
+            "nme": "亲子",
+            "url": "//vacations.ctrip.com/list/whole/sc2.html?sv=%e4%ba%b2%e5%ad%90&st=%e4%ba%b2%e5%ad%90",
+            "isHot": "N"
+        },
+        {
+            "pinyin": "BaMaYou",
+            "nme": "爸妈游",
+            "url": "//vacations.ctrip.com/list/whole/sc2.html?sv=%e7%88%b8%e5%a6%88%e6%b8%b8&st=%e7%88%b8%e5%a6%88%e6%b8%b8",
+            "isHot": "N"
+        },
+        {
+            "pinyin": "MeiShi",
+            "nme": "美食",
+            "url": "//vacations.ctrip.com/list/whole/sc2.html?sv=%e7%be%8e%e9%a3%9f&st=%e7%be%8e%e9%a3%9f",
+            "isHot": "N"
+        }
+    ],
+    "hotLnks": [
+        {
+            "nme": "精选",
+            "isHot": "N",
+            "lnk": "//vacations.ctrip.com/list/whole/sc2.html?sv=%e7%b2%be%e9%80%89&st=%e7%b2%be%e9%80%89",
+            "pinyin": "JingXuan"
+        },
+        {
+            "nme": "上海",
+            "isHot": "N",
+            "lnk": "//vacations.ctrip.com/list/whole/d-shanghai-2.html?salecity=2",
+            "pinyin": "ShangHai"
+        },
+        {
+            "nme": "杭州",
+            "isHot": "N",
+            "lnk": "//vacations.ctrip.com/list/whole/d-hangzhou-14.html?salecity=2",
+            "pinyin": "HangZhou"
+        },
+        {
+            "nme": "苏州",
+            "isHot": "N",
+            "lnk": "//vacations.ctrip.com/list/whole/d-suzhou-11.html?salecity=2",
+            "pinyin": "SuZhou"
+        },
+        {
+            "nme": "黄山",
+            "isHot": "N",
+            "lnk": "//vacations.ctrip.com/list/whole/d-huangshan-120061.html?salecity=2",
+            "pinyin": "HuangShan"
+        },
+        {
+            "nme": "南京",
+            "isHot": "N",
+            "lnk": "//vacations.ctrip.com/list/whole/d-nanjing-9.html?salecity=2",
+            "pinyin": "NanJing"
+        },
+        {
+            "nme": "舟山",
+            "isHot": "N",
+            "lnk": "//vacations.ctrip.com/list/whole/d-zhoushan-479.html?salecity=2",
+            "pinyin": "ZhouShan"
+        },
+        {
+            "nme": "无锡",
+            "isHot": "N",
+            "lnk": "//vacations.ctrip.com/list/whole/d-wuxi-10.html?salecity=2",
+            "pinyin": "WuXi"
+        },
+        {
+            "nme": "宁波",
+            "isHot": "N",
+            "lnk": "//vacations.ctrip.com/list/whole/d-ningbo-83.html?salecity=2",
+            "pinyin": "NingBo"
+        },
+        {
+            "nme": "安吉",
+            "isHot": "N",
+            "lnk": "//vacations.ctrip.com/list/whole/d-anji-686.html?salecity=2",
+            "pinyin": "AnJi"
+        }
+    ],
+    "destCitys": [
+        {
+            "nme": "精选",
+            "pinyin": "JingXuan"
+        },
+        {
+            "nme": "上海",
+            "pinyin": "ShangHai"
+        },
+        {
+            "nme": "杭州",
+            "pinyin": "HangZhou"
+        },
+        {
+            "nme": "苏州",
+            "pinyin": "SuZhou"
+        },
+        {
+            "nme": "黄山",
+            "pinyin": "HuangShan"
+        },
+        {
+            "nme": "南京",
+            "pinyin": "NanJing"
+        },
+        {
+            "nme": "舟山",
+            "pinyin": "ZhouShan"
+        },
+        {
+            "nme": "无锡",
+            "pinyin": "WuXi"
+        },
+        {
+            "nme": "宁波",
+            "pinyin": "NingBo"
+        },
+        {
+            "nme": "安吉",
+            "pinyin": "AnJi"
+        }
+    ]
+}
