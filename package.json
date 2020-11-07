@@ -1,23 +1,34 @@
 {
-  "name": "200524_back_end",
+  "name": "react-server",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.js"
+    "start": "npm run docs && cross-env NODE_ENV=development node server.js",
+    "dev": "cross-env NODE_ENV=development node server.js",
+    "build": "cross-env NODE_ENV=production node server.js",
+    "docs": "apidoc -i routers/ -o public/docs/"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "body-parser": "^1.19.0",
-    "connect-mongo": "^3.2.0",
+    "apidoc": "^0.25.0",
+    "axios": "^0.19.2",
     "cookie-parser": "^1.4.5",
+    "dayjs": "^1.8.28",
     "express": "^4.17.1",
-    "express-session": "^1.17.1",
+    "jsonwebtoken": "^8.5.1",
     "md5": "^2.3.0",
-    "mongoose": "^5.10.9",
-    "sha1": "^1.1.1"
+    "mongoose": "^5.9.6",
+    "morgan": "^1.10.0",
+    "nanoid": "^3.1.12"
+  },
+  "apidoc": {
+    "title": "硅谷应用文档",
+    "url": "http://localhost:5000"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.2"
   }
 }
