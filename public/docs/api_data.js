@@ -150,7 +150,7 @@ define({ "api": [
     },
     "sampleRequest": [
       {
-        "url": "http://localhost:2506/login/login"
+        "url": "http://localhost:5000/login/login"
       }
     ],
     "version": "1.0.0",
@@ -206,7 +206,7 @@ define({ "api": [
     },
     "sampleRequest": [
       {
-        "url": "http://localhost:2506/login/register"
+        "url": "http://localhost:5000/login/register"
       }
     ],
     "version": "1.0.0",
@@ -235,7 +235,7 @@ define({ "api": [
     },
     "sampleRequest": [
       {
-        "url": "http://localhost:2506/login/verify"
+        "url": "http://localhost:5000/login/verify"
       }
     ],
     "version": "1.0.0",

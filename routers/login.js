@@ -5,13 +5,26 @@ const express = require("express");
 const axios = require("axios");
 const cookieParser = require("cookie-parser");
 const Users = require("../db/models/users");
-const { SuccessModal, ErrorModal } = require("../model");
+const {
+  SuccessModal,
+  ErrorModal
+} = require("../model");
 // const md5 = require("../utils/md5");
-const { sign, verify } = require("../utils/jwt");
-const { CLIENT_ID, CLIENT_SECRET } = require("../config");
-const { filterPassword } = require("../utils/tools");
+const {
+  sign,
+  verify
+} = require("../utils/jwt");
+const {
+  CLIENT_ID,
+  CLIENT_SECRET
+} = require("../config");
+const {
+  filterPassword
+} = require("../utils/tools");
 const session_user = require("../session");
-const { nanoid } = require('nanoid')
+const {
+  nanoid
+} = require('nanoid')
 const Router = express.Router;
 const router = new Router();
 
@@ -32,11 +45,17 @@ const COOKIE_MAX_AGE = 7 * 24 * 3600 * 1000;
  * @apiVersion 1.0.0
  */
 router.post("/digits", async (req, res) => {
-  const { phone } = req.body;
+  const {
+    phone
+  } = req.body;
   const verify_code = getVerifyCode(6);
-  let user = await Users.findOne({ phone });
+  let user = await Users.findOne({
+    phone
+  });
   if (user) {
-    res.json(new ErrorModal({ message: "用户已注册" }));
+    res.json(new ErrorModal({
+      message: "用户已注册"
+    }));
   } else {
     console.log('验证码为：' + verify_code);
     session_user[phone] = {
@@ -47,6 +66,7 @@ router.post("/digits", async (req, res) => {
   }
 
 });
+
 function getVerifyCode(len = 6) {
   let verify_code = "";
   for (let i = 0; i < len; i++) {
@@ -69,9 +89,15 @@ function getVerifyCode(len = 6) {
  */
 router.post('/login', async (request, response) => {
   //获取客户端传递过来的：邮箱、密码、昵称
-  const { phone, password } = request.body
+  const {
+    phone,
+    password
+  } = request.body
   //去数据库中查询该用户是否注册过
-  let findResult = await Users.findOne({ phone, password: md5(password) });
+  let findResult = await Users.findOne({
+    phone,
+    password: md5(password)
+  });
   let token
   //若登录成功
   if (findResult) {
@@ -82,7 +108,9 @@ router.post('/login', async (request, response) => {
       data: {}
     })
     token = user.token;
-    response.cookie("user_session", token, { maxAge: COOKIE_MAX_AGE });
+    response.cookie("user_session", token, {
+      maxAge: COOKIE_MAX_AGE
+    });
 
   } else {
     //登录失败
@@ -107,52 +135,76 @@ router.post('/login', async (request, response) => {
  * @apiVersion 1.0.0
  */
 router.post("/register", async (req, res) => {
-  const { phone, code, password } = req.body;
+  const {
+    phone,
+    code,
+    password
+  } = req.body;
   const codeData = session_user[phone];
   if (password) {
-    if (codeData.expires > Date.now() && codeData.code == code) {
-      let user = await Users.findOne({ phone, password: md5(password) });
-      let token;
-
-      if (user) {
-        // try {
-        //   token = user.token;
-        //   //登录成功
-        //   if (!token) {
-        //     //下发签名
-        //     token = await sign({ phone });
-        //     //存入数据库
-        //     user.token = token;
-        //     await user.save();
-        //   } else {
-        //     await verify(token);
-        //   }
-        // } catch {
-        //   const token = await sign({ phone });
-        //   //存入数据库中
-        //   user.token = token;
-        //   await user.save();
-        // }
-        //去数据库中查询该用户是否注册过
-        res.json(new ErrorModal({ message: "用户已注册" }));
-
-      } else {
-
-        token = await sign({ phone });
-        // 存在数据库中
-        user = await Users.create({
+    if (code) {
+      if (codeData.expires > Date.now() && codeData.code == code) {
+        let user = await Users.findOne({
           phone,
-          password: md5(password),
-          token,
+          password: md5(password)
         });
-        res.json(new ErrorModal({ message: "注册成功" }));
+        let token;
 
+        if (user) {
+          // try {
+          //   token = user.token;
+          //   //登录成功
+          //   if (!token) {
+          //     //下发签名
+          //     token = await sign({ phone });
+          //     //存入数据库
+          //     user.token = token;
+          //     await user.save();
+          //   } else {
+          //     await verify(token);
+          //   }
+          // } catch {
+          //   const token = await sign({ phone });
+          //   //存入数据库中
+          //   user.token = token;
+          //   await user.save();
+          // }
+          //去数据库中查询该用户是否注册过
+          res.json(new ErrorModal({
+            message: "用户已注册"
+          }));
+
+        } else {
+
+          token = await sign({
+            phone
+          });
+          // 存在数据库中
+          user = await Users.create({
+            phone,
+            password: md5(password),
+            token,
+          });
+          res.json(new ErrorModal({
+            message: "注册成功"
+          }));
+
+        }
+      } else {
+        res.json(new ErrorModal({
+          message: "验证码无效"
+        }));
       }
-    } else {
-      res.json(new ErrorModal({ message: "验证码无效" }));
+    }else{
+      res.json(new ErrorModal({
+        message: "请输入验证码"
+      }));
     }
+
   } else {
-    res.json(new ErrorModal({ message: "密码为空,请输入密码" }));
+    res.json(new ErrorModal({
+      message: "密码为空,请输入密码"
+    }));
   }
 
 });
@@ -170,7 +222,9 @@ router.post("/register", async (req, res) => {
 router.get("/oauth/github", async (req, res) => {
   try {
     //获取到了授权码code
-    const { code } = req.query;
+    const {
+      code
+    } = req.query;
     console.log('github返回的code为：', code);
     //接着去请求令牌token
     const tokenResponse = await axios({
@@ -189,7 +243,9 @@ router.get("/oauth/github", async (req, res) => {
     const accessToken = tokenResponse.data.access_token;
     console.log('github返回的授权token为：', accessToken);
     // 携带token向github请求用户数据
-    const { data } = await axios({
+    const {
+      data
+    } = await axios({
       method: "get",
       url: "https://api.github.com/user",
       headers: {
@@ -199,13 +255,17 @@ router.get("/oauth/github", async (req, res) => {
     });
     console.log('github返回的用户信息：', data);
     //去数据库中查询是否存在该用户
-    const user = await Users.findOne({ username: data.login });
+    const user = await Users.findOne({
+      username: data.login
+    });
     //准备一个token
     let token;
     //如果没有该用户
     if (!user) {
       //注册该用户，同时生成一个token
-      token = await sign({ username: data.login });
+      token = await sign({
+        username: data.login
+      });
       //向数据库中写入数据
       await Users.create({
         username: data.login,
@@ -224,14 +284,18 @@ router.get("/oauth/github", async (req, res) => {
         await verify(user.token);
       } catch {
         //若过期，重新生成token
-        token = await sign({ username: data.id });
+        token = await sign({
+          username: data.id
+        });
         //更改之前存储的token
         user.token = token;
         //保存数据
         await user.save();
       }
     }
-    res.cookie("user_session", token, { maxAge: COOKIE_MAX_AGE });
+    res.cookie("user_session", token, {
+      maxAge: COOKIE_MAX_AGE
+    });
     //将得到的用户数据返回到页面上~
     res.redirect(`http://vuexiaoai.utools.club/#/usercenter`);
   } catch (e) {
@@ -250,13 +314,19 @@ router.get("/oauth/github", async (req, res) => {
  */
 router.post("/verify", cookieParser(), async (req, res) => {
   try {
-    const { user_session } = req.cookies;
+    const {
+      user_session
+    } = req.cookies;
     const data = await verify(user_session);
     const user = await Users.findOne(data);
-    res.json(new SuccessModal({ data: filterPassword(user) }));
+    res.json(new SuccessModal({
+      data: filterPassword(user)
+    }));
   } catch (e) {
     console.log(e);
-    res.json(new ErrorModal({ message: "用户未登录，请先登录" }));
+    res.json(new ErrorModal({
+      message: "用户未登录，请先登录"
+    }));
   }
 });
 
