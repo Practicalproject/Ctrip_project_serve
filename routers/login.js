@@ -139,71 +139,78 @@ router.post("/register", async (req, res) => {
     password
   } = req.body;
   const codeData = session_user[phone];
-  if (password) {
-    if (code) {
-      if (codeData.expires > Date.now() && codeData.code == code) {
-        let user = await Users.findOne({
-          phone,
-          password: md5(password)
-        });
-        let token;
-
-        if (user) {
-          // try {
-          //   token = user.token;
-          //   //登录成功
-          //   if (!token) {
-          //     //下发签名
-          //     token = await sign({ phone });
-          //     //存入数据库
-          //     user.token = token;
-          //     await user.save();
-          //   } else {
-          //     await verify(token);
-          //   }
-          // } catch {
-          //   const token = await sign({ phone });
-          //   //存入数据库中
-          //   user.token = token;
-          //   await user.save();
-          // }
-          //去数据库中查询该用户是否注册过
-          res.json(new ErrorModal({
-            message: "用户已注册"
-          }));
-
-        } else {
-
-          token = await sign({
-            phone
-          });
-          // 存在数据库中
-          user = await Users.create({
+  if (phone) {
+    if (password) {
+      if (code) {
+        if (codeData.expires > Date.now() && codeData.code == code) {
+          let user = await Users.findOne({
             phone,
-            password: md5(password),
-            token,
+            password: md5(password)
           });
-          res.json(new SuccessModal({
-            message: "注册成功"
-          }));
+          let token;
 
+          if (user) {
+            // try {
+            //   token = user.token;
+            //   //登录成功
+            //   if (!token) {
+            //     //下发签名
+            //     token = await sign({ phone });
+            //     //存入数据库
+            //     user.token = token;
+            //     await user.save();
+            //   } else {
+            //     await verify(token);
+            //   }
+            // } catch {
+            //   const token = await sign({ phone });
+            //   //存入数据库中
+            //   user.token = token;
+            //   await user.save();
+            // }
+            //去数据库中查询该用户是否注册过
+            res.json(new ErrorModal({
+              message: "用户已注册"
+            }));
+
+          } else {
+
+            token = await sign({
+              phone
+            });
+            // 存在数据库中
+            user = await Users.create({
+              phone,
+              password: md5(password),
+              token,
+            });
+            res.json(new SuccessModal({
+              message: "注册成功"
+            }));
+
+          }
+        } else {
+          res.json(new ErrorModal({
+            message: "验证码无效"
+          }));
         }
       } else {
         res.json(new ErrorModal({
-          message: "验证码无效"
+          message: "请输入验证码"
         }));
       }
+
     } else {
       res.json(new ErrorModal({
-        message: "请输入验证码"
+        message: "密码为空,请输入密码"
       }));
     }
-
   } else {
     res.json(new ErrorModal({
-      message: "密码为空,请输入密码"
+      message: "请输入手机号"
     }));
   }
+
 
 });
 
