@@ -102,11 +102,10 @@ router.post('/login', async (request, response) => {
   //若登录成功
   if (findResult) {
     // request.session._id = findResult._id
-    response.send({
-      code: 20000,
-      msg: '登录成功！',
-      data: {}
-    })
+    response.json(new SuccessModal({
+      message: "登录成功！"
+    }));
+
     token = user.token;
     response.cookie("user_session", token, {
       maxAge: COOKIE_MAX_AGE
@@ -114,11 +113,10 @@ router.post('/login', async (request, response) => {
 
   } else {
     //登录失败
-    response.send({
-      code: 20001,
-      msg: '登录失败！',
-      data: {}
-    })
+    response.json(new ErrorModal({
+      message: "登录失败！"
+    }));
+
   }
 })
 
@@ -185,7 +183,7 @@ router.post("/register", async (req, res) => {
             password: md5(password),
             token,
           });
-          res.json(new ErrorModal({
+          res.json(new SuccessModal({
             message: "注册成功"
           }));
 
@@ -195,7 +193,7 @@ router.post("/register", async (req, res) => {
           message: "验证码无效"
         }));
       }
-    }else{
+    } else {
       res.json(new ErrorModal({
         message: "请输入验证码"
       }));
