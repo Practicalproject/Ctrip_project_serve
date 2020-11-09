@@ -149,7 +149,7 @@ router.post("/register", async (req, res) => {
           password: md5(password),
           token,
         });
-        res.json(new ErrorModal({ message: "注册成功" }));
+        res.json(new SuccessModal({ message: "注册成功" }));
 
       }
     } else {
