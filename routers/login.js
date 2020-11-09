@@ -71,18 +71,22 @@ router.post('/login', async (request, response) => {
   //获取客户端传递过来的：邮箱、密码、昵称
   const { phone, password } = request.body
   //去数据库中查询该用户是否注册过
-  let findResult = await Users.findOne({ phone, password: md5(password) });
+  let user = await Users.findOne({
+    phone,
+    password: md5(password)
+  });
   let token
   //若登录成功
-  if (findResult) {
+  console.log(user)
+  if (user) {
     // request.session._id = findResult._id
-    response.send({
-      code: 20000,
-      msg: '登录成功！',
-      data: {}
-    })
     token = user.token;
-    response.cookie("user_session", token, { maxAge: COOKIE_MAX_AGE });
+    response.cookie("user_session", token, {
+      maxAge: COOKIE_MAX_AGE
+    });
+    response.json(new SuccessModal({
+      message: "登录成功！"
+    }));
 
   } else {
     //登录失败
