@@ -94,22 +94,22 @@ router.post('/login', async (request, response) => {
     password
   } = request.body
   //去数据库中查询该用户是否注册过
-  let findResult = await Users.findOne({
+  let user = await Users.findOne({
     phone,
     password: md5(password)
   });
   let token
   //若登录成功
-  if (findResult) {
+  console.log(user)
+  if (user) {
     // request.session._id = findResult._id
-    response.json(new SuccessModal({
-      message: "登录成功！"
-    }));
-
     token = user.token;
     response.cookie("user_session", token, {
       maxAge: COOKIE_MAX_AGE
     });
+    response.json(new SuccessModal({
+      message: "登录成功！"
+    }));
 
   } else {
     //登录失败
